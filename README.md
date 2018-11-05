@@ -1,0 +1,3 @@
+# BitCraft Site
+
+New site!
