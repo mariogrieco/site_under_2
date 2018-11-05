@@ -31,7 +31,7 @@
   },
   "scripts": {
     "lint": "eslint",
-    "poststart": "yarn run build:client -p && yarn run build:server -p",
+    "prestart": "yarn run build:client -p && yarn run build:server -p",
     "build:client": "webpack --config webpack.config.js",
     "build:server": "webpack --config webpack.server.config.js",
     "start": "cross-env PORT=80 NODE_ENV=production node dist/SSR index.js",
