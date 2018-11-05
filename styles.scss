@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+html {
+  font-family: $primary-font;
+}
+
+strong { 
+  font-weight: bolder;
+}
+
+p {
+  color: $textColor;
+}
