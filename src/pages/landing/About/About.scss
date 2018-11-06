@@ -1,0 +1,30 @@
+@import "../../../../variables.scss";
+
+.About {
+  padding: 150px 0px;
+  text-align: center;
+  background-color: white;
+
+  P {
+    font-size: 16px;
+    line-height: 2.15em;
+  }
+}
+
+.AboutTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.AboutTitle::after {
+  content: " ";
+  width: 5%;
+  height: 2px;
+  color: #475059;
+  background-color: $primaryColor;
+  display: block;
+  margin: 25px auto;
+}

@@ -16,7 +16,7 @@
   font-size: 37px;
   line-height: 1.12;
   font-weight: bold;
-  font-size: 5.45vw;
+  font-size: 4.5vw;
   display: block;
 }
 
@@ -24,7 +24,7 @@
   padding: 12px 0;  
   display: block;
   color: white;
-  font-size: 17px;
+  font-size: 16px;
   // font-size: 2vw;
   margin: 40px 0px;
 }
@@ -39,17 +39,43 @@
 .MainSectionBtn {
   padding: 15px 30px;
   font-size: 16px;
-  max-width: 290px;
+  max-width: 240px;
   height: unset;
   background-color: #fff;
   color: $primaryColor;
   font-weight: 700;
   width: 100%;
   border-radius: 30px;
+  transition: none;
+  // left: 0%;
+  // will-change: left;
+  height: 58px;
 }
 
 .MainSectionContainer {
   transform: translateY(-50%);
   top: 50%;
   position: relative;
+}
+
+
+@media screen and (max-width: $screen-md) {
+  .MainSectionTitle,
+  .MainSectionBody {
+    text-align: center;
+  }
+  .MainSectionBtn {
+    margin: 0 auto;
+    display: inherit;
+    transform: scale(.77);
+  }
+}
+
+@media screen and (max-height: 390px) {
+  .MainSectionContainer {
+    padding-top: 220px;
+    padding-bottom: 220px;
+    transform: none;
+    top: unset
+  }
 }

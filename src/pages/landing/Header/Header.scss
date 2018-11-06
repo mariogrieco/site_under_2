@@ -5,14 +5,18 @@
     text-align: right;
   }
 
+  li:nth-last-child(1) { 
+    margin-right: 0px;
+  }
+
   li {
     text-align: right;
     list-style: none;
     display: inline-block;
-    margin: 15px;
+    margin: 15px 25px;
     // padding: 15px;
     > a {
-      color: white;
+      color: #efeffb;
     }
   }
 }

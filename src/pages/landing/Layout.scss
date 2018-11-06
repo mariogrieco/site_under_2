@@ -30,27 +30,13 @@
 
   right: 0;
   bottom: 0;
-  width: 85%;
-  height: 95%;
+  width: 100%;
+  height: 90%;
   background-repeat: no-repeat;
-}
 
+  background-attachment: fixed;
 
-.LayoutTriangleArea {
-  display: block;
-  background-color: transparent;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 9;
-  svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    fill: white;
-  }
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 // .LayoutTriangleArea::before {
@@ -62,4 +48,35 @@
 //   display: block;
 //   content: " ";
 // }
+
+
+
+.LayoutTriangleArea {
+  display: block;
+  background-color: rgba(0,0,0,0);
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // fill: white;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .Layout {
+    min-height: calc(114vh)
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .LayoutImg {
+    transform: translateY(25%);
+  }
+}
 
