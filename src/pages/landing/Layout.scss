@@ -2,7 +2,64 @@
 
 
 .Layout {
+  position: relative;
+  background: #9cd7fc;
+  background: -moz-linear-gradient(-45deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #9cd7fc), color-stop(57%, #4b31d0), color-stop(100%, #4b31d0));
+  background: -webkit-linear-gradient(-45deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  background: -o-linear-gradient(-45deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  background: -ms-linear-gradient(-45deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  background: linear-gradient(135deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cd7fc', endColorstr='#4b31d0', GradientType=1 );
+}
+
+.LayoutBody {
   max-width: $containerWidth;
   margin: 0 auto;
   padding: 0px 15px;
+  z-index: 10;
+  position: relative;
 }
+
+.LayoutImg {
+  background-image: url('/public/images/Group50.png');
+  background-position: right;
+  background-size: contain;
+  position: absolute;
+  z-index: 9;
+
+  right: 0;
+  bottom: 0;
+  width: 85%;
+  height: 95%;
+  background-repeat: no-repeat;
+}
+
+
+.LayoutTriangleArea {
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    fill: white;
+  }
+}
+
+// .LayoutTriangleArea::before {
+//   width: 0; 
+//   height: 0; 
+//   border-left: 30px solid rgba(0,0,0,0);
+//   border-right: 30px solid gray;
+//   border-top: 30px solid rgba(0,0,0,0);
+//   display: block;
+//   content: " ";
+// }
+

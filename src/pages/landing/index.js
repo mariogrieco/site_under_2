@@ -6,7 +6,37 @@ import Layout from './Layout'
 
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
-import Button from 'antd/lib/button'
+
+const menuConfig = [
+  {
+    label: 'About us',
+    href: "#"
+  },
+  {
+    label: 'Past clients',
+    href: '#'
+  },
+  {
+    label: 'Case studies',
+    href: '#'
+  },
+  {
+    label: 'BLog',
+    href: '#'
+  },
+  {
+    label: 'Team',
+    href: '#'
+  },
+  {
+    label: 'Press',
+    href: '#'
+  },
+  {
+    label: 'Poke us',
+    href: '#'
+  },
+]
 
 export default class Landing extends Component {
   render() {
@@ -15,16 +45,13 @@ export default class Landing extends Component {
         <Row>
           <Col span="24">
             <MainSection
-              title='Get the right products to market, faster.'
+              title='Software Architected'
               body={`
-                  productboard is the product excellence system that helps you understand what users need,
-                  prioritize what to build, and rally everyone around your roadmap.
+                We are a creative software agency with a focus on business
+                processes and cloud infrastructure.
               `}
-              Header={<Header />}
+              Header={<Header menuConfig={menuConfig} />}
             >
-              <Button>
-                Try Now
-              </Button>
             </MainSection>
           </Col>
         </Row>

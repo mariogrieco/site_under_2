@@ -1,3 +1,5 @@
+import './theme.ant';
+
 import React, { Component } from "react"
 import { Switch, Route } from "react-router-dom"
 import { LocaleProvider } from 'antd';
@@ -6,7 +8,6 @@ import 'moment/locale/en-au';
 
 import Landing from './pages/landing'
 
-import './theme.ant';
 
 class AppRoutes extends Component {
   componentWillMount = () => {

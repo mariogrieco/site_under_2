@@ -1,10 +1,10 @@
 import React from 'react'
 
-import './AppBrand.scss'
+import styles from './AppBrand.scss'
 
 export default () => {
   return (
-    <div className='AppBrand'>
+    <div className={styles.AppBrand}>
       <span>AppBrand</span>
     </div>
   )
