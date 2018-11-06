@@ -19,7 +19,7 @@ const MainSection = ({
       </span>
       <div className={styles.MainSectionContainer}>
         <Row>
-          <Col xs={24} sm={24} md={14}>
+          <Col xs={24} sm={24} md={13}>
             <span className={styles.MainSectionTitle}>
               {title}
             </span>

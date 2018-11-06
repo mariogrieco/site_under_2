@@ -18,9 +18,9 @@ const menuConfig = [
     href: "#",
     onClick: () => {
       scroller.scrollTo('About', {
-        duration: 1200,
-        delay: 50,
-        smooth: 'easeInOutCubic',
+        duration: 1000,
+        delay: 0,
+        smooth: 'easeInOutQuint',
         offset: 80,
         // containerId: 'AboutContainer'
       })
@@ -72,10 +72,12 @@ export default class Landing extends Component {
             <Col span="24">
               <MainSection
               title='Software. Architected'
-                body={`
-                  We are a creative software agency with a focus on business
-                  processes and cloud infrastructure.
-                `}
+                body={
+                  <span>
+                    We are a creative software agency with a focus on business <br />
+                    processes and cloud infrastructure.
+                  </span>
+                }
                 Header={<Header menuConfig={menuConfig} />}
               >
               </MainSection>

@@ -14,7 +14,7 @@
 .MainSectionTitle {
   color: white;
   font-size: 37px;
-  line-height: 1.12;
+  line-height: 1.32;
   font-weight: bold;
   font-size: 3.47vw;
   display: block;
@@ -28,6 +28,7 @@
   // font-size: 2vw;
   line-height: 2.1;
   margin: 40px 0px;
+  font-weight: 300;
 }
 
 .MainSectionHeader {
@@ -40,7 +41,7 @@
 
 .MainSectionBtn {
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 17px;
   max-width: 240px;
   height: unset;
   background-color: #fff;
@@ -52,6 +53,8 @@
   // left: 0%;
   // will-change: left;
   height: 58px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
 }
 
 .MainSectionContainer {
