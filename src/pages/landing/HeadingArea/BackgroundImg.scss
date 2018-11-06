@@ -1,0 +1,19 @@
+@import "../../../../variables.scss";
+
+.BackgroundImg {
+  background-image: url('/public/images/Group67.png');
+  background-position: center;
+  background-size: cover;
+  // position: absolute;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  height: 420px;
+  transition: none;
+}
+
+// @media screen and (max-width: $screen-md) {
+//   .BackgroundImg {
+//     background-position: center; 
+//   }
+// }

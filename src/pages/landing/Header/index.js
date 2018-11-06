@@ -21,7 +21,7 @@ const Header = ({
           <nav>
             <ul>
               {menuConfig.map(item => (
-                <li>
+                <li key={item.label} onClick={item.onClick||(()=>{})}>
                   <a href={item.href}>
                     {item.label}
                   </a>

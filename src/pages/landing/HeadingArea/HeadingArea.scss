@@ -1,6 +1,6 @@
 @import "../../../../variables.scss";
 
-.About {
+.HeadingArea {
   padding: 150px 0px;
   text-align: center;
   background-color: white;
@@ -11,7 +11,7 @@
   }
 }
 
-.AboutTitle {
+.HeadingAreaTitle {
   font-size: 40px;
   font-weight: bold;
   color: black;
@@ -19,7 +19,7 @@
   display: block;
 }
 
-.AboutTitle::after {
+.HeadingAreaTitle::after {
   content: " ";
   width: 5%;
   height: 2px;

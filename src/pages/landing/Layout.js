@@ -2,12 +2,14 @@ import React, { memo, Fragment } from 'react'
 
 import Triangle from '../../Triangle'
 import defaultStyles from './Layout.scss'
+// import cd from 'classnames'
 
 const Layout = ({
     children,
     img,
     styles,
-    decorator
+    decorator,
+    imgBackground
   }) => {
     styles = styles ? styles : {}
   return (
@@ -37,6 +39,7 @@ const Layout = ({
           />
         </div>
         }
+        {imgBackground}
       </div>
     </Fragment>
   )

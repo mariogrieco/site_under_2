@@ -26,7 +26,7 @@ const config = {
                 presets: ['es2015', 'stage-2', 'react'],
                 plugins: [
                   ['transform-runtime', {
-                    polyfill: true,
+                    polyfill: false,
                     regenerator: true
                   }]
                 ]

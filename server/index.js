@@ -61,16 +61,16 @@ function htmlTemplate(reactDom, title) {
         <html lang="en">
         <head>
           <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>demo - ${title}</title>
           <meta name="theme-color" content="#282F55" />
+          <link defer href="/css/landing.css" rel="stylesheet" />
           <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous" /> -->
           <!-- <link rel="manifest" href="/manifest.json"> -->
           <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
-          <link defer href="/css/landing.css" rel="stylesheet" />
           <link defer href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" />
-          <link defer href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-          <link defer href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:800" rel="stylesheet" />
+          <!-- <link defer href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> -->
+          <!-- <link defer href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:800" rel="stylesheet" /> -->
         </head>
           <body>
             <noscript>
@@ -78,7 +78,7 @@ function htmlTemplate(reactDom, title) {
             </noscript>
             <div id="root">${reactDom}</div>
             <div id="modal-container"></div>
-            <script async defer="true" type="application/javascript" src="/landing.js"></script>
+            <script defer type="application/javascript" src="/landing.js"></script>
           </body>
         </html>
     `;
