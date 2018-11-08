@@ -1,5 +1,5 @@
 import './theme.ant';
-import '../styles.scss';
+import './styles.scss'
 
 import React, { Component } from "react"
 import { Switch, Route } from "react-router-dom"

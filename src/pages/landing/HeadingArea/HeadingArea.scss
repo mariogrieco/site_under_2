@@ -1,4 +1,4 @@
-@import "../../../../variables.scss";
+@import "../../../variables.scss";
 
 .HeadingArea {
   padding: 150px 0px;
@@ -6,14 +6,16 @@
   background-color: white;
 
   P {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 2.15em;
+    color: #828081;
   }
 }
 
 .HeadingAreaTitle {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 34px;
+  font-weight: 700;
+  font-family: $primary-font;
   color: black;
   margin-bottom: 50px;
   display: block;

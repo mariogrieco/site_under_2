@@ -3,7 +3,7 @@ import express from "express";
 import path from "path";
 import compression  from 'compression'
 import React from "react";
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderToString } from "react-dom/server";
 import App from "../src/AppRoutes.js";
 import http from 'http'
 import { StaticRouter } from "react-router-dom";
@@ -11,7 +11,7 @@ import { StaticRouter } from "react-router-dom";
 import LRUCache from 'lru-cache'
 const ssrCache = new LRUCache({
   max: 100,
-  maxAge: 1000 * 60 * 60 // 1hour
+  maxAge: 0 // 1000 * 60 * 60 // 1hour
 })
 
 function getCacheKey (req) {
@@ -42,11 +42,15 @@ app.use(compression({
 
 app.use(express.static(path.resolve('./dist/CSR')));
 
+app.get('/robots.txt', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'robots.txt'))
+})
+
 app.get('/', renderAndCache, ( req, res ) => {
   res.setHeader('x-cache', 'MISS')
   const key = getCacheKey(req)
   const context = {};
-  const ReactDom = renderToStaticMarkup(<StaticRouter location={req.url} context={context}>
+  const ReactDom = renderToString(<StaticRouter location={req.url} context={context}>
       <App />
     </StaticRouter>);
     const $data = htmlTemplate(ReactDom,  `App - ${req.url}`);
@@ -74,9 +78,10 @@ function htmlTemplate(reactDom, title) {
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous" /> -->
   <!-- <link rel="manifest" href="/manifest.json"> -->
   <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
-  <link defer href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" />
-  <!-- <link defer href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> -->
-  <!-- <link defer href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:800" rel="stylesheet" /> -->
+  <link defer href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700" rel="stylesheet" />
+  <link defer href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600" rel="stylesheet">
+  <link defer href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
+  <link defer href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:800" rel="stylesheet">
 </head>
   <body>
     <noscript>

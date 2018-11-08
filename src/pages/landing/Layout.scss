@@ -1,4 +1,4 @@
-@import "../../../variables.scss";
+@import "../../variables.scss";
 
 
 .Layout {
@@ -27,7 +27,7 @@
   height: 100vh;
   width: 100vh;
   width: 100% !important;
-  height: 90% !important;
+  height: 100% !important;
   background-position: right;
   background-size: contain;
   position: absolute;
@@ -37,7 +37,6 @@
   float: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  transition: all 0.25s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background-image: url('/public/images/Group50.png');
 }
 
@@ -70,7 +69,7 @@
 
 @media screen and (min-width: $screen-md) {
   .Layout {
-    min-height: 114vh
+    min-height: 110vh
   }
 }
 
@@ -82,7 +81,7 @@
 
 @media screen and (max-height: 481px) {
   .Layout {
-    min-height: 160vh;
+    min-height: 145vh;
   }
 }
 

@@ -75,6 +75,9 @@ const config = {
           {
             from: 'public/images/*'
           },
+          {
+            from: 'public/robots.txt'
+          },
           // {
             // from: 'public/index.html'
           // },

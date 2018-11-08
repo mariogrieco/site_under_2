@@ -75,6 +75,9 @@ module.exports = {
         from: 'public/images/*'
       },
       {
+        from: 'public/robots.txt'
+      },
+      {
         from: 'public/bootstrap.min.css'
       },
       {
