@@ -62,10 +62,11 @@ export default class Landing extends Component {
         <Layout img decorator styles={{
           body: {
             // 'overflow-y': 'auto',
-            // minHeight: '100vh'
+            width: '100%'
           },
           container: {
-            height: '100vh'
+            height: '100vh',
+            width: '100%'
           }
         }}>
           <Row>
@@ -86,10 +87,12 @@ export default class Landing extends Component {
         </Layout>
         <Layout styles={{
           container: {
-            background: 'transparent'
+            background: 'transparent',
+            width: '100%'
           },
           body: {
-            background: 'white'
+            background: 'white',
+            width: '100%'
           },
         }}
         imgBackground={<BackgroundImg />}
@@ -107,10 +110,12 @@ export default class Landing extends Component {
         </Layout>
         <Layout styles={{
           body: {
-            background: 'white'
+            background: 'white',
+            width: '100%'
           },
           container: {
-            background: 'white'
+            background: 'white',
+            width: '100%'
           },
         }}
         >

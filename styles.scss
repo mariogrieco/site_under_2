@@ -1,7 +1,31 @@
 @import "./variables.scss";
 
-html {
+* { 
+  transition: none !important;
+}
+
+body, html, :root {
   font-family: $primary-font;
+  text-shadow: #fff 0px 1px 1px;
+
+  // better-font-smoothing css
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // overflow-x: hidden;
+
+   /* Adjust font size */
+   font-size: 100%;
+   -webkit-text-size-adjust: 100%;
+   /* Font varient */
+   font-variant-ligatures: none;  
+   -webkit-font-variant-ligatures: none;
+   /* Smoothing */
+   text-rendering: optimizeLegibility;
+   -moz-osx-font-smoothing: grayscale;
+   font-smoothing: antialiased;
+   -webkit-font-smoothing: antialiased;
+   text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
 
 strong { 
