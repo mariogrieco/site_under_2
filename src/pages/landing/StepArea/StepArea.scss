@@ -1,0 +1,60 @@
+@import "../../../variables.scss";
+
+.StepArea {
+  color: red;
+  margin-top: 80px;
+}
+
+.StepAreaTitle {
+  font-size: 1.8em;
+  font-weight: 600;
+  font-family: $primary-font;
+  color: #090909;
+  margin-bottom: 20px;
+  display: block;
+  letter-spacing: initial;
+}
+
+.StepAreaNum {
+  color: $secondaryColor;
+  font-weight: 900;
+  font-size: 1.2em;
+  letter-spacing: 0.081em;
+  margin-left: 10px;
+  display: block;
+  padding-top: 130px;
+  margin-bottom: 5px;
+  font-family: $lato-font;
+}
+
+.StepAreaP {
+  font-size: 0.9em;
+  line-height: 2.46em;
+  color: #828081;
+  font-weight: 500;
+  max-width: 390px;
+  display: inline-block;
+  text-align: inherit;
+}
+
+.StepAreaImgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  // min-height: 207px;
+  min-width: 233px;
+
+  min-height: 415px;
+  max-width: 467px;
+}
+
+.StepAreaImgBody {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+}

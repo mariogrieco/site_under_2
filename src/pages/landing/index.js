@@ -8,6 +8,7 @@ import MainSection from './MainSection'
 import Layout from './Layout'
 import HeadingArea from './HeadingArea'
 import BackgroundImg from './HeadingArea/BackgroundImg'
+import StepArea from './StepArea'
 
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
@@ -122,6 +123,41 @@ export default class Landing extends Component {
           <Row>
             <Col span="24">
               <HeadingArea title='Qualities of our services' id='qualities'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              </HeadingArea>
+            </Col>
+            <Col span="24">
+              <StepArea 
+                title="Durable"
+                imgUri='/public/images/Group3.png'
+                num={'01'}
+                >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam
+              </StepArea>
+              <StepArea 
+                title="Scalable"
+                imgUri='/public/images/Group3.png'
+                num={'02'}
+                reverse
+                >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam
+              </StepArea>
+              <StepArea 
+                title="Reliable"
+                imgUri='/public/images/Group3.png'
+                num={'03'}
+                >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam
+              </StepArea>
+            </Col>
+            <Col span="24">
+              <HeadingArea title='Past Client' id='qualities'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               </HeadingArea>
             </Col>

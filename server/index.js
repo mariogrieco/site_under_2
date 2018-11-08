@@ -82,6 +82,7 @@ function htmlTemplate(reactDom, title) {
   <link defer href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600" rel="stylesheet">
   <link defer href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
   <link defer href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:800" rel="stylesheet">
+  <link defer href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
   <body>
     <noscript>

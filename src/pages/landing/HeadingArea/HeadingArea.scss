@@ -6,18 +6,19 @@
   background-color: white;
 
   P {
-    font-size: 16px;
-    line-height: 2.15em;
+    font-size: 0.9em;
+    line-height: 2.46em;
     color: #828081;
+    font-weight: 500;
   }
 }
 
 .HeadingAreaTitle {
-  font-size: 34px;
+  font-size: 2.20em;
   font-weight: 700;
   font-family: $primary-font;
-  color: black;
-  margin-bottom: 50px;
+  color: #090909;
+  margin-bottom: 35px;
   display: block;
 }
 
@@ -28,5 +29,5 @@
   color: #475059;
   background-color: $primaryColor;
   display: block;
-  margin: 25px auto;
+  margin: 20px auto;
 }
