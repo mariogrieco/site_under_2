@@ -1,0 +1,23 @@
+@import "../../../variables.scss";
+
+.TrianglesLayout {
+}
+
+.TrianglesLayoutWhiteArea {
+}
+
+.TrianglesLayoutGrayArea {
+  // background-color: #F4F9FF;
+  background-color: #edeefb;
+}
+
+.TrianglesLayoutBody {
+  padding: 0px 32px 0px 32px;
+  // max-width: $containerWidth;
+  // margin: 0 auto;
+  // overflow: hidden;
+}
+
+.TrianglesLayoutBody > .ant-row {
+  background: red;
+}

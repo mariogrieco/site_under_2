@@ -9,6 +9,9 @@ import Layout from './Layout'
 import HeadingArea from './HeadingArea'
 import BackgroundImg from './HeadingArea/BackgroundImg'
 import StepArea from './StepArea'
+import TrianglesLayout from './TrianglesLayout'
+import ClientBox from './ClientBox'
+import ClientBoxLayout from './TrianglesLayout/ClientBoxLayout'
 
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
@@ -156,13 +159,27 @@ export default class Landing extends Component {
                 magna aliqua. Ut enim ad minim veniam
               </StepArea>
             </Col>
-            <Col span="24">
+          </Row>
+        </Layout>
+        <Row>
+          <Col span="24">
+            <TrianglesLayout Heading={
               <HeadingArea title='Past Client' id='qualities'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               </HeadingArea>
-            </Col>
-          </Row>
-        </Layout>
+            }>
+            <ClientBoxLayout>
+              <ClientBox />
+              <ClientBox />
+              <ClientBox />
+
+              <ClientBox />
+              <ClientBox />
+              <ClientBox />
+            </ClientBoxLayout>
+            </TrianglesLayout>
+          </Col>
+        </Row>
       </Fragment>
     )
   }
