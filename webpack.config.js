@@ -75,6 +75,12 @@ module.exports = {
         from: 'public/images/*'
       },
       {
+        from: 'public/sw.js'
+      },
+      {
+        from: 'public/manifest.json'
+      },
+      {
         from: 'public/robots.txt'
       },
       {

@@ -76,7 +76,7 @@ function htmlTemplate(reactDom, title) {
   <meta name="theme-color" content="#282F55" />
   <link rel="stylesheet" href="/css/landing.css" />
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous" /> -->
-  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <link rel="manifest" href="/manifest.json">
   <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
   <link defer href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700" rel="stylesheet" />
   <link defer href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600" rel="stylesheet">
@@ -92,6 +92,13 @@ function htmlTemplate(reactDom, title) {
     <div id="modal-container"></div>
     <script defer type="application/javascript" src="/landing.js"></script>
   </body>
+    <script> // --- new node ---
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js');
+        });
+    }
+  </script>
 </html>
 
 `;

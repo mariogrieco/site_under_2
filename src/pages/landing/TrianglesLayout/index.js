@@ -13,20 +13,20 @@ const TrianglesLayout = ({
         {Heading}
       </div>
       <div className={styles.TrianglesLayoutGrayArea}>
-      <Triangle
+        <Triangle
           viewBox={'0 0 1000 90'}
           minHeight={'90px'}
-          points={'1000 0 1000 90 0 90'}
-          fill="#edeefb"
+          points={'2000 0 2000 180 0 0'}
+          fill="white"
         />
         <div className={styles.TrianglesLayoutBody}>
           {children}
         </div>
         <Triangle
-          viewBox={'90 1000 0 0'}
+          viewBox={'0 0 1000 90'}
           minHeight={'90px'}
-          points={'90 0 90 1000 0 1000'}
-          fill="#edeefb"
+          points={'2000 0 0 180 0 0'}
+          fill="#edeefb"  //#edeefb
         />
       </div>
     </div>

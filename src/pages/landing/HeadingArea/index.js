@@ -4,10 +4,11 @@ import styles from './HeadingArea.scss'
 const HeadingArea =  ({
   title,
   children,
-  id
+  id,
+  propsStyles
 }) => {
   return (
-    <div className={styles.HeadingArea} id={id}>
+    <div className={styles.HeadingArea} id={id} style={propsStyles||{}}>
       <span className={styles.HeadingAreaTitle}>
         {title}
       </span>

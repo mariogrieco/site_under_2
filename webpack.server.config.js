@@ -78,6 +78,12 @@ const config = {
           {
             from: 'public/robots.txt'
           },
+          {
+            from: 'public/sw.js'
+          },
+          {
+            from: 'public/manifest.json'
+          },
           // {
             // from: 'public/index.html'
           // },

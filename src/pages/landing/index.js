@@ -164,7 +164,9 @@ export default class Landing extends Component {
         <Row>
           <Col span="24">
             <TrianglesLayout Heading={
-              <HeadingArea title='Past Client' id='qualities'>
+              <HeadingArea title='Past Client' id='qualities' propsStyles={{
+                paddingBottom: 60,
+              }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               </HeadingArea>
             }>

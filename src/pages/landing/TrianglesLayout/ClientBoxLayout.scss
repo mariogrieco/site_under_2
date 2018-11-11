@@ -7,9 +7,10 @@
   flex-wrap: wrap;
   max-width: $containerWidth;
   margin: 0 auto;
+  margin-top: -90px;
   > div {
-    width: 29.99% !important;
-    height: 8.8vw;
+    width: 29.9% !important;
+    height: 9.9vw;
   }
 }
 
