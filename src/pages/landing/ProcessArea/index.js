@@ -1,19 +1,28 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 import styles from './ProcessArea.scss'
 import HeadingArea from '../HeadingArea'
+import TrianglesLayout from '../TrianglesLayout'
 
-export default ({
+const ProcessArea = ({
   children
 }) => {
   return (
-    <div classNames={styles.ProcessArea}>
+    <div className={styles.ProcessArea}>
       <HeadingArea
        title='Our Process'
+       propsStyles={{
+         paddingBottom: '90px'
+       }}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       </HeadingArea>
-      {children}
+      <TrianglesLayout />
+      <div className={styles.ProcessAreaBody}>
+        {children}
+      </div>
     </div>
   )
 }
+
+export default memo(ProcessArea)

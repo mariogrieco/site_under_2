@@ -9,7 +9,6 @@ import 'moment/locale/en-au';
 
 import Landing from './pages/landing'
 
-
 class AppRoutes extends Component {
   componentWillMount = () => {
     console.log('server/client side')

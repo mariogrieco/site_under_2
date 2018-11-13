@@ -1,0 +1,117 @@
+@import "../../../variables.scss";
+
+.ProcessBox {
+  font-size: 0.966em;
+  border-radius: 5px;
+  min-height: 230px;
+  // max-width: 50%;
+  background-color: white;
+  padding: 26.666px;
+  // border: 1px solid #f5f5ff;
+  // box-shadow: 0 1px 2px #f5f5ff;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0px 2px 35px rgba(200, 200, 200, 0.33);
+
+  max-height: 261px;
+  height: 261px;
+}
+
+.ProcessBoxImg {
+  display: block;
+  min-width: 4.5em;
+  width: 4.5em;
+  height: 4.5em;
+  max-height: 4.5em;
+  background-color: #ddd;
+  border-radius: 50%;
+  // margin: 0px 30px 0px 0px;
+  // margin: 0 auto;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.ProcessBoxInfo {
+  display: block;
+  .ProcessBoxTitle {
+    font-size: 1.13em;
+    font-weight: 700;
+    color: black;
+    display: block;
+    margin-bottom: 1.125em;
+    padding: 0px 32.5px;
+  }
+
+  .ProcessBoxP {
+    font-size: .8444em;
+    color: #333;
+    line-height: 2.12em;
+    font-family: Open Sans,sans-serif;
+    font-weight: 500;
+    text-shadow: 0 0 1px #bab6b6;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0px 5px 0px 32.5px;
+  }
+}
+
+.ProcessAreaArrowHidden {
+  display: none;
+}
+
+.ProcessAreaArrow {
+  background-image: url('/public/images/arrow-right.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  width: 56px;
+  height: 55px;
+  z-index: 10;
+  box-shadow: 0px 2px 31px rgba(135, 135, 135, 0.20);
+}
+
+.ProcessAreaArrowleft {
+  left: -28px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.ProcessAreaArrowright {
+  right: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.ProcessAreaArrowbottom {
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.ProcessAreaArrowtop {
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+@media screen and (max-width: $screen-md) {
+  .ProcessBox {
+    font-size: 14px;
+    // flex-direction: column;
+  }
+  .ProcessBoxImg {
+    position: absolute;
+    bottom: 2em;
+    right: 4.5em;
+  }
+  .ProcessBoxInfo .ProcessBoxTitle {
+    margin-top: -1em;
+    margin-bottom: 1em;
+    padding-top: 20px;
+  }
+}
