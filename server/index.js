@@ -92,13 +92,13 @@ function htmlTemplate(reactDom, title) {
     <div id="modal-container"></div>
     <script defer type="application/javascript" src="/landing.js"></script>
   </body>
-    <script> // --- new node ---
+  <!-- <script> // --- new node ---
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('/sw.js');
         });
     }
-  </script>
+  </script> -->
 </html>
 
 `;

@@ -1,3 +1,59 @@
-.TestimonialArea {
+@import "../../../variables.scss";
 
+.TestimonialArea {
+  background: #ebade8;
+  background: -moz-linear-gradient(-45deg, #ebade8 0%, #ebade8 7%, #9350c0 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #ebade8), color-stop(7%, #ebade8), color-stop(100%, #9350c0));
+  background: -webkit-linear-gradient(-45deg, #ebade8 0%, #ebade8 7%, #9350c0 100%);
+  background: -o-linear-gradient(-45deg, #ebade8 0%, #ebade8 7%, #9350c0 100%);
+  background: -ms-linear-gradient(-45deg, #ebade8 0%, #ebade8 7%, #9350c0 100%);
+  background: linear-gradient(135deg, #ebade8 0%, #ebade8 7%, #9350c0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebade8', endColorstr='#9350c0', GradientType=1 );
+  padding-bottom: 200px;
+}
+
+.TestimonialAreaGrid {
+  max-width: $containerWidth;
+  margin: 80px auto;
+}
+
+.TestimonialAreaTitle {
+  color: white;
+  font-size: 2.5vw;
+  line-height: 1.32;
+  font-weight: 600;
+  display: block;
+  padding: 40px 0px;
+}
+
+.TestimonialAreaTitle::after {
+  content: " ";
+  height: 2px;
+  background-color: #fff;
+  width: 10%;
+
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin: 40px 0px 0px 0px;
+}
+
+.TestimonialAreaBody {
+  color: red;
+}
+
+.TestimonialAreaContainer{ 
+  margin: 0 auto;
+}
+
+.TestimonialAreaBody {
+  max-width: 505px;
+  font-size: .8em;
+  line-height: 2.46em;
+  color: white;
+  font-weight: 500;
+  max-width: 390px;
+  display: inline-block;
+  text-align: inherit;
 }

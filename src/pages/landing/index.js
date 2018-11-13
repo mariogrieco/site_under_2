@@ -12,6 +12,9 @@ import StepArea from './StepArea'
 import TrianglesLayout from './TrianglesLayout'
 import ClientBox from './ClientBox'
 import ClientBoxLayout from './TrianglesLayout/ClientBoxLayout'
+import TestimonialArea from './TestimonialArea'
+import CostumerBox from './TestimonialArea/CostumerBox'
+import ProcessArea from './ProcessArea'
 
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
@@ -181,6 +184,62 @@ export default class Landing extends Component {
             </ClientBoxLayout>
             </TrianglesLayout>
           </Col>
+          <Col span="24" style={{
+            // display: 'flex',
+            // width: "100%",
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+            flexDirection: 'column'
+          }}>
+            <TestimonialArea
+              title="Testimonial"
+              Body={
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam.
+                </span>
+              }
+            >
+             <Row gutter={32}>
+              <Col sm={24} md={25} lg={12}>
+                  <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
+                    "Lorem ipsum dolor sit amet,
+                    consectetur adipiing elit, sed
+                    do eiusmod tempor dor
+                    incididunt ut labore 
+                  </CostumerBox>
+                </Col>
+                <Col sm={24} md={25} lg={12}>
+                  <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
+                    "Lorem ipsum dolor sit amet,
+                    consectetur adipiing elit, sed
+                    do eiusmod tempor dor
+                    incididunt ut labore 
+                  </CostumerBox>
+                </Col>
+                <Col sm={24} md={25} lg={12}>
+                  <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
+                    "Lorem ipsum dolor sit amet,
+                    consectetur adipiing elit, sed
+                    do eiusmod tempor dor
+                    incididunt ut labore 
+                  </CostumerBox>
+                </Col>
+                <Col sm={24} md={25} lg={12}>
+                  <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
+                    "Lorem ipsum dolor sit amet,
+                    consectetur adipiing elit, sed
+                    do eiusmod tempor dor
+                    incididunt ut labore 
+                  </CostumerBox>
+                </Col>
+             </Row>
+            </TestimonialArea>
+          </Col>
+        </Row>
+        <Row span="25">
+          <ProcessArea />
         </Row>
       </Fragment>
     )

@@ -22,12 +22,6 @@ const TrianglesLayout = ({
         <div className={styles.TrianglesLayoutBody}>
           {children}
         </div>
-        <Triangle
-          viewBox={'0 0 1000 90'}
-          minHeight={'90px'}
-          points={'2000 0 0 180 0 0'}
-          fill="#edeefb"  //#edeefb
-        />
       </div>
     </div>
   )
