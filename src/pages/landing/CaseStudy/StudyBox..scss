@@ -1,0 +1,45 @@
+.StudyBox {
+  display: block;
+  font-size: 15px;
+  min-width: 320px;
+  width: 320px;
+  max-width: 320px;
+  border-radius: 5px;
+  margin: 0px 15px;
+  // border-top: 1px solid #333333;
+  // border-left: 1px solid #333333;
+  // border-right: 1px solid #333333;
+}
+
+.StudyBoxTitle {
+  font-size: 1.13em;
+  font-weight: 700;
+  color: #000;
+  display: block;
+  margin-bottom: 1.125em;
+  padding: 20px 30px 0px 30px;
+}
+
+.StudyBoxP {
+  font-size: .8444em;
+  color: #333;
+  line-height: 2.12em;
+  font-weight: 500;
+  text-shadow: 0 0 1px #bab6b6;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0px 30px 5px 30px;
+}
+
+.StudyBoxImgContainer {
+  height: 185px;
+  width: 100%;
+  background-color: #434343;
+}
+
+.StudyBoxFigcaption {
+  height: 195px;
+  background-color: white;
+  box-shadow: 0 2px 35px hsla(0,0%,78.4%,.33);
+  border: 1px solid #f4f9ff;
+}

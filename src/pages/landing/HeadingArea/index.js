@@ -1,14 +1,20 @@
 import React, { memo } from 'react'
 import styles from './HeadingArea.scss'
 
+import cn from 'classnames'
+
 const HeadingArea =  ({
   title,
   children,
   id,
-  propsStyles
+  propsStyles,
+  textAlignleft
 }) => {
   return (
-    <div className={styles.HeadingArea} id={id} style={propsStyles||{}}>
+    <div className={cn(
+      styles.HeadingArea,
+      textAlignleft ? styles.HeadingAreaLeft : null
+      )} id={id} style={propsStyles||{}}>
       <span className={styles.HeadingAreaTitle}>
         {title}
       </span>

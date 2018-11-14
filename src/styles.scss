@@ -2,10 +2,11 @@
 
 
 body {
-  // zoom: 0.899;
+  zoom: 0.94;
 }
 
 body, html, :root {
+  overflow-x: hidden;
   font-family: $primary-font;
   text-shadow: #fff 0px 1px 1px;
   

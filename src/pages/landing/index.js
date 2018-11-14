@@ -15,7 +15,11 @@ import ClientBoxLayout from './TrianglesLayout/ClientBoxLayout'
 import TestimonialArea from './TestimonialArea'
 import CostumerBox from './TestimonialArea/CostumerBox'
 import ProcessArea from './ProcessArea'
+import CaseStudy from './CaseStudy'
 import ProcessBox from './ProcessArea/ProcessBox'
+import OpenSource from './OpenSource'
+import Blog from './Blog'
+import Team from './TeamArea'
 
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
@@ -73,7 +77,7 @@ export default class Landing extends Component {
             width: '100%'
           },
           container: {
-            height: '100vh',
+            // height: '100vh',
             width: '100%'
           }
         }}>
@@ -203,7 +207,7 @@ export default class Landing extends Component {
               }
             >
              <Row gutter={32}>
-              <Col sm={24} md={25} lg={12}>
+              <Col sm={24} md={24} lg={12}>
                   <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -211,7 +215,7 @@ export default class Landing extends Component {
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={25} lg={12}>
+                <Col sm={24} md={24} lg={12}>
                   <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -219,7 +223,7 @@ export default class Landing extends Component {
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={25} lg={12}>
+                <Col sm={24} md={24} lg={12}>
                   <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -227,7 +231,7 @@ export default class Landing extends Component {
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={25} lg={12}>
+                <Col sm={24} md={24} lg={12}>
                   <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -241,7 +245,7 @@ export default class Landing extends Component {
         </Row>
         <Row span="24">
           <ProcessArea>
-            <Row gutter={32}>
+            <Row gutter={16}>
               <Col sm={24} md={24} lg={12}>
                 <ProcessBox title='Understand' imgUrl='/public/images/Group119.png' arrow='right'>
                   We take the time to learn about your project, why it
@@ -322,6 +326,18 @@ export default class Landing extends Component {
               </Col>
             </Row>
           </ProcessArea>
+        </Row>
+        <Row>
+          <CaseStudy />
+        </Row>
+        <Row>
+          <OpenSource />
+        </Row>
+        <Row>
+          <Blog />
+        </Row>
+        <Row>
+          <Team />
         </Row>
       </Fragment>
     )

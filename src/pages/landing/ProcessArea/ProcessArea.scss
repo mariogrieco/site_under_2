@@ -8,10 +8,10 @@
 .ProcessAreaBody {
   max-width: $containerWidth;
   margin: 0 auto;
-  padding: 0px 32px;
+  padding: 0px 16px;
   // position: relative;
   // top: -300px;
   > div > div {
-    margin-bottom: 32px !important;
+    margin-bottom: 16px !important;
   }
 }

@@ -1,0 +1,39 @@
+@import "../../../variables.scss";
+
+.CaseStudyContainer {
+  position: relative;
+  // z-index: 100;
+  padding: 260px 0px;
+  background-color: #edeefb;
+}
+
+.CaseStudy {
+  max-width: $containerWidth;
+  margin: 0 auto;
+  overflow: none;
+}
+
+.CaseStudyItem {
+  display: block !important;
+  margin: 0px 15px !important;
+  width: auto !important;
+}
+
+.CaseStudySwiperContainer {
+  // background-color: red;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: $screen-md) {
+  .CaseStudySwiperContainer {
+    position: static;
+    transform: translate(0%);
+    top: initial;
+    right: initial;
+    margin-top: 90px;
+  }
+}

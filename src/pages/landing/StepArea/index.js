@@ -18,7 +18,7 @@ const StepArea = ({
       <Layout
         reverse={reverse}
         LeftArea={
-          <Col xs={24} sm={24} md={12} style={{
+          <Col xs={24} sm={12} md={12} style={{
             textAlign: reverse ? 'right' : 'left'
           }}>
             <span className={styles.StepAreaNum}>
@@ -33,7 +33,7 @@ const StepArea = ({
           </Col>
         }
         RightArea={
-          <Col xs={24} sm={24} md={12}>
+          <Col xs={24} sm={12} md={12}>
             <div data-url={imgUri} className={styles.StepAreaImgContainer} style={{
               float: reverse ? 'left' : 'right'
             }}>

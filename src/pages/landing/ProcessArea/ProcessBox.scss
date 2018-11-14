@@ -88,30 +88,54 @@
 
 
 .ProcessAreaArrowbottom {
-  bottom: -40px;
+  bottom: -28px;
   left: 50%;
   transform: translateX(-50%) rotate(90deg);
 }
 
 .ProcessAreaArrowtop {
-  top: -40px;
+  top: -28px;
   left: 50%;
   transform: translateX(-50%) rotate(90deg);
 }
 
-@media screen and (max-width: $screen-md) {
+@media screen and (max-width: $screen-lg) {
   .ProcessBox {
     font-size: 14px;
+    padding: 10px 0px;
     // flex-direction: column;
+    .ProcessBoxImg {
+      position: absolute;
+      bottom: 2em;
+      right: 4.5em;
+    }
+    .ProcessBoxTitle {
+      font-size: 1.45em;
+    }
+    .ProcessBoxInfo .ProcessBoxTitle {
+      // margin-top: -1em;
+      // margin-bottom: 1em;
+      padding-top: 15px;
+    }
+    .ProcessAreaArrowright,
+    .ProcessAreaArrowleft {
+      top: initial;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%) rotate(90deg);
+    }
   }
-  .ProcessBoxImg {
-    position: absolute;
-    bottom: 2em;
-    right: 4.5em;
-  }
-  .ProcessBoxInfo .ProcessBoxTitle {
-    margin-top: -1em;
-    margin-bottom: 1em;
-    padding-top: 20px;
+}
+
+@media screen and (max-width: $screen-xs) { 
+  .ProcessBox {
+    .ProcessBoxImg {
+      top: 0.95em;
+      right: 1.95em;
+      transform: scale(0.79);
+    }
+    .ProcessBoxInfo {
+      margin-bottom: 2em;
+    }
   }
 }

@@ -1,3 +1,13 @@
+@import "../../../variables.scss";
+
 .TeamArea {
 
+}
+
+.TeamAreaLayout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: $containerWidth;
+  margin: 0 auto;
 }
