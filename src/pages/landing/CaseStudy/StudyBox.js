@@ -10,7 +10,9 @@ export default ({
   return (
     <figure className={styles.StudyBox}>
       <div className={styles.StudyBoxImgContainer}>
-        <img url={imgUrl} alt='imgUrl' />
+        <div style={{
+          backgroundImage: `url(${imgUrl})`
+        }}></div>
       </div>
       <figcaption className={styles.StudyBoxFigcaption}>
         <span className={styles.StudyBoxTitle}>
