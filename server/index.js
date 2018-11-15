@@ -11,7 +11,7 @@ import { StaticRouter } from "react-router-dom";
 import LRUCache from 'lru-cache'
 const ssrCache = new LRUCache({
   max: 100,
-  maxAge: 0 // 1000 * 60 * 60 // 1hour
+  maxAge: 1000 * 60 // 1mn
 })
 
 function getCacheKey (req) {

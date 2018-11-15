@@ -33,26 +33,62 @@ const menuConfig = [
         duration: 1000,
         delay: 0,
         smooth: 'easeInOutQuint',
-        offset: 80,
+        offset: 95,
         // containerId: 'AboutContainer'
       })
     }
   },
   {
     label: 'Past clients',
-    href: '#'
+    href: '#',
+    onClick: (e) => {
+      scroller.scrollTo('PastClient', {
+        duration: 700,
+        delay: 0,
+        smooth: 'easeInOutQuint',
+        offset: -80,
+        // containerId: 'AboutContainer'
+      })
+    }
   },
   {
     label: 'Case studies',
-    href: '#'
+    href: '#',
+    onClick: (e) => {
+      scroller.scrollTo('CaseStudies', {
+        duration: 700,
+        delay: 0,
+        smooth: 'easeInOutQuint',
+        offset: -420,
+        // containerId: 'AboutContainer'
+      })
+    }
   },
   {
-    label: 'BLog',
-    href: '#'
+    label: 'Blog',
+    href: '#',
+    onClick: (e) => {
+      scroller.scrollTo('Blog', {
+        duration: 700,
+        delay: 0,
+        smooth: 'easeInOutQuint',
+        offset: -420,
+        // containerId: 'AboutContainer'
+      })
+    }
   },
   {
     label: 'Team',
-    href: '#'
+    href: '#',
+    onClick: (e) => {
+      scroller.scrollTo('Team', {
+        duration: 700,
+        delay: 0,
+        smooth: 'easeInOutQuint',
+        offset: -420,
+        // containerId: 'AboutContainer'
+      })
+    }
   },
   {
     label: 'Press',
@@ -109,8 +145,8 @@ export default class Landing extends Component {
         }}
         imgBackground={<BackgroundImg />}
         >
-          <Row>
-            <Col span="24" id="AboutContainer">
+          <Row id="AboutContainer">
+            <Col span="24">
               <HeadingArea title='About us' id='About'>
                 BitCraft is a creative software development agency based in Atlanta, Georgia. We design world-class infrastructures to support the tech products of
                 tomorrow. We pride ourselves on our engineering standards, our understanding of our clients' business needs, and our desire to impact and power-up
@@ -172,7 +208,7 @@ export default class Landing extends Component {
         <Row>
           <Col span="24">
             <TrianglesLayout Heading={
-              <HeadingArea title='Past Client' id='qualities' propsStyles={{
+              <HeadingArea id='PastClient' title='Past Client' propsStyles={{
                 paddingBottom: 60,
               }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -327,16 +363,16 @@ export default class Landing extends Component {
             </Row>
           </ProcessArea>
         </Row>
-        <Row>
+        <Row id="CaseStudies">
           <CaseStudy />
         </Row>
         <Row>
           <OpenSource />
         </Row>
-        <Row>
+        <Row id="Blog">
           <Blog />
         </Row>
-        <Row>
+        <Row id="Team">
           <Team />
         </Row>
       </Fragment>
