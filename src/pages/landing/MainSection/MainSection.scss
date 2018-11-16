@@ -65,8 +65,11 @@
   position: relative;
 }
 
-
 @media screen and (max-width: $screen-md) {
+  .MainSectionTitle {
+    font-size: 2em;
+  }
+
   .MainSectionTitle,
   .MainSectionBody {
     text-align: center;
@@ -84,5 +87,11 @@
     padding-bottom: 150px;
     transform: none;
     top: unset
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .MainSectionTitle {
+    font-size: 1.54em;
   }
 }

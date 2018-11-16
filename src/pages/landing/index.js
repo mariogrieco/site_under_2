@@ -18,6 +18,8 @@ import ProcessArea from './ProcessArea'
 import CaseStudy from './CaseStudy'
 import ProcessBox from './ProcessArea/ProcessBox'
 import OpenSource from './OpenSource'
+// import ModalNavBar from './ModalNavBar'
+import Footer from './Footer'
 import Blog from './Blog'
 import Team from './TeamArea'
 
@@ -107,6 +109,7 @@ export default class Landing extends Component {
   render() {
     return (
       <Fragment>
+        {/* <ModalNavBar menuConfig={menuConfig} /> */}
         <Layout img decorator styles={{
           body: {
             // 'overflow-y': 'auto',
@@ -120,7 +123,7 @@ export default class Landing extends Component {
           <Row>
             <Col span="24">
               <MainSection
-              title='Software. Architected'
+                title='Software. Architected'
                 body={
                   <span>
                     We are a creative software agency with a focus on business <br />
@@ -185,7 +188,7 @@ export default class Landing extends Component {
               </StepArea>
               <StepArea 
                 title="Scalable"
-                imgUri='/public/images/Group3.png'
+                imgUri='/public/images/Group4.png'
                 num={'02'}
                 reverse
                 >
@@ -195,7 +198,7 @@ export default class Landing extends Component {
               </StepArea>
               <StepArea 
                 title="Reliable"
-                imgUri='/public/images/Group3.png'
+                imgUri='/public/images/Group5.png'
                 num={'03'}
                 >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -215,13 +218,13 @@ export default class Landing extends Component {
               </HeadingArea>
             }>
             <ClientBoxLayout>
-              <ClientBox />
-              <ClientBox />
-              <ClientBox />
+              <ClientBox imgUrl='/public/images/google.png' />
+              <ClientBox imgUrl='/public/images/google.png' />
+              <ClientBox imgUrl='/public/images/google.png' />
 
-              <ClientBox />
-              <ClientBox />
-              <ClientBox />
+              <ClientBox imgUrl='/public/images/google.png' />
+              <ClientBox imgUrl='/public/images/google.png' />
+              <ClientBox imgUrl='/public/images/google.png' />
             </ClientBoxLayout>
             </TrianglesLayout>
           </Col>
@@ -242,33 +245,33 @@ export default class Landing extends Component {
                 </span>
               }
             >
-             <Row gutter={32}>
-              <Col sm={24} md={24} lg={12}>
-                  <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
+             <Row gutter={24}>
+              <Col sm={24} md={12} lg={10}>
+                  <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
                     do eiusmod tempor dor
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={24} lg={12}>
-                  <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
+                <Col sm={24} md={12} lg={10}>
+                  <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
                     do eiusmod tempor dor
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={24} lg={12}>
-                  <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
+                <Col sm={24} md={12} lg={10}>
+                  <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
                     do eiusmod tempor dor
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={24} lg={12}>
-                  <CostumerBox avatar='' name='Glade stella' position='CEO Founder Google'>
+                <Col sm={24} md={12} lg={10}>
+                  <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
                     do eiusmod tempor dor
@@ -364,16 +367,29 @@ export default class Landing extends Component {
           </ProcessArea>
         </Row>
         <Row id="CaseStudies">
-          <CaseStudy />
+          <Col span="24">
+            <CaseStudy />
+          </Col>
         </Row>
         <Row>
-          <OpenSource />
+          <Col span="24">
+            <OpenSource />
+          </Col>
         </Row>
         <Row id="Blog">
-          <Blog />
+          <Col span="24">
+            <Blog />
+          </Col>
         </Row>
         <Row id="Team">
-          <Team />
+          <Col span="24">
+            <Team />
+          </Col>
+        </Row>
+        <Row>
+          <Col span="24">
+            <Footer />
+          </Col>
         </Row>
       </Fragment>
     )

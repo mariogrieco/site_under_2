@@ -11,18 +11,22 @@ import styles from './Blog.scss'
 import Swiper from 'react-id-swiper';
 
 const params = {
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
+  pagination: false,
+  // {
+  //   el: '.swiper-pagination',
+  //   type: 'bullets',
+  //   clickable: true
+  // },
+  navigation: false,
+  // {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev'
+  // },
   grabCursor: true,
-  spaceBetween: 0,
-  slidesPerView: 1,
+  slidesPerView: 2,
+  spaceBetween: 30,
+  initialSlide: 2,
+  freeMode: true,
   centeredSlides: true,
 }
 

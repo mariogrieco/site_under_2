@@ -7,7 +7,6 @@ import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
 
 const Header = ({
-  children,
   menuConfig
 }) => {
   return (
@@ -29,6 +28,11 @@ const Header = ({
               ))}
             </ul>
           </nav>
+          <div className={styles.MenuIcon}>
+            <span className={styles.MenuIconBar}>
+              &nbsp;
+            </span>
+          </div>
         </Col>
       </Row>
       

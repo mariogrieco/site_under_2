@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 .BlogCard {
   // height: 280px;
   // width: 600px;
@@ -64,9 +66,9 @@
 }
 
 .BlogCardImgContainer {
-  min-width: 255px;
-  width: 255px;
-  max-width: 255px;
+  min-width: 15.9375em;
+  width: 15.9375em;
+  max-width: 15.9375em;
   position: relative;
 }
 
@@ -78,4 +80,29 @@
    top: 0;
    bottom: 0;
    right: 0;
+}
+
+
+@media screen and (max-width: $screen-md) {
+  .BlogCard {
+    font-size: 14px;
+    height: 20.8em;
+    width: 44.625em;
+    margin: 0px;
+    max-width: 90vw;
+    margin: 0 auto;
+    max-height: auto;
+    min-height: auto;
+    height: auto;
+    flex-direction: column;
+  }
+  .BlogCardSummary {
+    padding: 1.25em;
+  }
+  .BlogCardImgContainer {
+    height: 230px;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+  }
 }

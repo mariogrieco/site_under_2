@@ -13,7 +13,10 @@ const OpenSource = ({
     <div className={styles.OpenSource}>
       <Row>
         <Col xs={24} sm={24} md={12}>
-          <span>123</span>
+          <div className={styles.OpenSourceImgContainer}>
+            <div className={styles.OpenSourceImg}>
+            </div>
+          </div>
         </Col>
         <Col xs={24} sm={24} md={12}>
           <HeadingArea title='Open source project' textAlignleft>

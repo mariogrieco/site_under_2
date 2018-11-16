@@ -8,16 +8,17 @@
 
 .TrianglesLayoutGrayArea {
   border-bottom: 1px solid #edeefb;
+  background-color: #edeefb;
   // background-color: #F4F9FF;
   // background-color: #edeefb;
-  background: #f4f9ff;
-  background: -moz-linear-gradient(top, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #f4f9ff), color-stop(48%, #edeefb), color-stop(52%, #edeefb), color-stop(58%, #edeefb));
-  background: -webkit-linear-gradient(top, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
-  background: -o-linear-gradient(top, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
-  background: -ms-linear-gradient(top, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
-  background: linear-gradient(to bottom, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f9ff', endColorstr='#edeefb', GradientType=0 );
+  // background: #f4f9ff;
+  // background: -moz-linear-gradient(top, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
+  // background: -webkit-gradient(left top, left bottom, color-stop(0%, #f4f9ff), color-stop(48%, #edeefb), color-stop(52%, #edeefb), color-stop(58%, #edeefb));
+  // background: -webkit-linear-gradient(top, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
+  // background: -o-linear-gradient(top, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
+  // background: -ms-linear-gradient(top, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
+  // background: linear-gradient(to bottom, #f4f9ff 0%, #edeefb 48%, #edeefb 52%, #edeefb 58%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f9ff', endColorstr='#edeefb', GradientType=0 );
 }
 
 .TrianglesLayoutBody {

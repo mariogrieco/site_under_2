@@ -2,4 +2,12 @@
 
 .AppBrand {
   margin: 15px 0px;
+  transition: margin 0.25s linear;
+}
+
+
+@media screen and (max-width: $screen-md) {
+  .AppBrand {
+    margin: 10px 0px;
+  }
 }

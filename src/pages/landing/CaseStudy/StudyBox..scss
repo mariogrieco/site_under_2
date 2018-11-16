@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 .StudyBox {
   display: block;
   font-size: 15px;
@@ -53,4 +55,22 @@
   background-color: white;
   box-shadow: 0 2px 35px hsla(0,0%,78.4%,.33);
   border: 1px solid #f4f9ff;
+}
+
+
+@media screen and (max-width: $screen-md) {
+  .StudyBox {
+    font-size: 14px;
+    min-width: 275px;
+    max-width: 275px;
+    width: 275px;
+  }
+  .StudyBoxTitle {
+    font-size: 1em;
+    margin-bottom: 0.99em;
+    padding: 15px 25px 0;
+  }
+  .StudyBoxFigcaption {
+    height: 155px;
+  }
 }

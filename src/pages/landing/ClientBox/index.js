@@ -1,10 +1,15 @@
 import React, { memo } from 'react'
 import styles from './ClientBox.scss'
 
-function ClientBox () {
+function ClientBox ({
+  imgUrl
+}) {
   return (
     <div className={styles.ClientBox}>
-      &nbsp;
+      <div className={styles.ClientBoxImg} style={{
+        backgroundImage: `url(${imgUrl})`
+      }}>
+      </div>
     </div>
   )
 }

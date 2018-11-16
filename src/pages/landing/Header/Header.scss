@@ -26,4 +26,48 @@
       // font-family: $primary-font;
     }
   }
+  .MenuIcon {
+    display: none;
+    transition: margin 0.25s linear;
+  }
+}
+
+.MenuIcon {
+  position: relative;
+}
+
+.MenuIconBar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 2px;
+  margin-top: -1px;
+  margin-left: -7px;
+  background: hsla(0,0%,100%,.6);
+  border-radius: 1px;
+  box-shadow: 0 5px 0 hsla(0,0%,100%,.6), 0 -5px 0 hsla(0,0%,100%,.6);
+  transition: all 0.2s ease
+}
+
+.MenuIcon:hover,
+.MenuIcon:active {
+  > span  {
+    background: hsla(0, 39%, 81%, 0.6);
+    box-shadow: 0 5px 0 hsla(0, 39%, 81%, 0.6), 0 -5px 0 hsla(0, 39%, 81%, 0.6);
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .Header nav {
+    display: none;
+  }
+  .Header .MenuIcon {
+    display: block;
+    margin: 20px 0;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
 }

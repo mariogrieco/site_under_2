@@ -58,3 +58,9 @@
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (max-width: $screen-md) {
+  .StepArea {
+    font-size: 14px;
+  }
+}

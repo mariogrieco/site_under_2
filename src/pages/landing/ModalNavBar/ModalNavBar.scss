@@ -1,0 +1,111 @@
+.ModalNavBar {
+  // overflow-y: hidden;
+  background: #9cd7fc;
+  background: -moz-linear-gradient(-45deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #9cd7fc), color-stop(57%, #4b31d0), color-stop(100%, #4b31d0));
+  background: -webkit-linear-gradient(-45deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  background: -o-linear-gradient(-45deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  background: -ms-linear-gradient(-45deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  background: linear-gradient(135deg, #9cd7fc 0%, #4b31d0 57%, #4b31d0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cd7fc', endColorstr='#4b31d0', GradientType=1 );
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  overflow-y: auto;
+
+  ul li:nth-child(1)::before {
+    display: none;
+  }
+
+  li {
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0 19px;
+    color: white;
+    position: relative;
+  }
+
+  nav {
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  ul {
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    margin-left: -15px;
+    height: 1px;
+    background: hsla(0,0%,100%,.2);
+  }
+}
+
+.ModalNavBarContainer {
+  float: right;
+  margin: 15px;
+  position: absolute;
+  right: 0;
+}
+
+.ModalNavBarCloses {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.ModalNavBarCloses::before {
+  transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+
+.ModalNavBarCloses::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transform: rotate(45deg);
+  transition: all 0.2s linear;
+}
+
+.ModalNavBarContainer:hover,
+.ModalNavBarContainer:active {
+  .ModalNavBarCloses::before {
+    transform: rotate(45deg);
+  }
+  .ModalNavBarCloses::after {
+    transform: rotate(-45deg);
+  }
+}

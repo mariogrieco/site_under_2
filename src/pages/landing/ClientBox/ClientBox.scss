@@ -4,11 +4,23 @@
   width: 453px;
   border-radius: 5px;
   border: 1px solid #F4F9FF;
-  box-shadow: 0px 1px 1px #f1f3f9;
+  box-shadow: 0px 1px 3px #f1f3f9;
   margin: 20px auto;
 
   max-height: 235px;
   max-width: 453px;
 
   min-height: 119px;
+  position: relative;
+}
+
+
+.ClientBoxImg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-position: center;
+  background-size: cover;
 }

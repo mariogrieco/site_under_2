@@ -26,6 +26,14 @@
   padding: 40px 0px;
 }
 
+
+// .TestimonialAreaBody {
+// > div > div {
+//     margin-bottom: 16px !important;
+//     // background: red;
+//   }
+// }
+
 .TestimonialAreaTitle::after {
   content: " ";
   height: 2px;
@@ -44,6 +52,11 @@
 }
 
 .TestimonialAreaContainer{ 
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
 }
 

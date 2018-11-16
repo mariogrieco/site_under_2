@@ -6,9 +6,11 @@
   max-height: 270px;
   max-width: 295px;
   background-color: white;
-  padding-right: 50px;
   border: 1px solid #bcbcbc;
-  box-shadow: 0px 1px 2px #f5f5ff;
+  box-shadow: 0 1px 3px #f1f3f9;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 15px;
 }
 
 .CostumerBoxSummary {
@@ -19,12 +21,14 @@
 }
 
 .CostumerBoxAvatar {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: #ccc;
   border: 1px solid transparent;
   display: block;
+  background-position: center;
+  background-size: cover;
 }
 
 .CostumerBoxInfo {
@@ -44,6 +48,12 @@
 .CostumerBoxPosition {
   font-size: 0.83em;
   text-shadow: 0px 0px 1px #bab6b6;
+  // font-size: .88em;
+  // margin-top: .35em;
+  color: #777;
+  // line-height: 2.12em;
+  // font-weight: 500;
+  // text-shadow: 0 0 1px rgba(186,182,182,.21);
 }
 
 .CostumerBoxP {
@@ -56,4 +66,13 @@
   text-shadow: 0px 0px 1px #bab6b6;
   text-align: left;
   margin: 0px auto;
+}
+
+@media screen and (max-width: $screen-md) {
+  .CostumerBox {
+    font-size: 14px;
+    padding: 25px;
+    max-height: 260px;
+    max-width: 260px;
+  }
 }
