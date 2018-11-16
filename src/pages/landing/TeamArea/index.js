@@ -12,9 +12,9 @@ export default () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       </HeadingArea>
       <div className={styles.TeamAreaLayout}>
-        <TeamAreaBox />
-        <TeamAreaBox />
-        <TeamAreaBox />
+        <TeamAreaBox title='Glade stella' imgUrl='/public/images/demo3.png'>
+          CEO FOUNDER
+        </TeamAreaBox>
       </div>
     </div>
   )

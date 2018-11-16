@@ -21,9 +21,9 @@ const params = {
     prevEl: '.swiper-button-prev'
   },
   grabCursor: true,
-  spaceBetween: 60,
-  slidesPerView: 3,
-  // centeredSlides: true,
+  spaceBetween: 0,
+  slidesPerView: 1,
+  centeredSlides: true,
 }
 
 const Blog = () => {
@@ -34,16 +34,56 @@ const Blog = () => {
       </HeadingArea>
       <Swiper {...params} className={styles.CaseStudySwiper}>
         <div>
-          <BlogCard />
+          <BlogCard
+            title='Consectetur adipiscing elit, sed do eiusmod tempo adipiscing elit,' 
+            imgUrl='/public/images/demo2.png'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniamLorem ipsum
+            dolor sit amet, consectetur adipiscing
+            <button>
+              Read more
+            </button>
+          </BlogCard>
         </div>
         <div>
-          <BlogCard />
+          <BlogCard
+            title='Consectetur adipiscing elit, sed do eiusmod tempo adipiscing elit,' 
+            imgUrl='/public/images/demo2.png'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniamLorem ipsum
+            dolor sit amet, consectetur adipiscing
+            <button>
+              Read more
+            </button>
+          </BlogCard>
         </div>
         <div>
-          <BlogCard />
+          <BlogCard
+            title='Consectetur adipiscing elit, sed do eiusmod tempo adipiscing elit,' 
+            imgUrl='/public/images/demo2.png'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniamLorem ipsum
+            dolor sit amet, consectetur adipiscing
+            <button>
+              Read more
+            </button>
+          </BlogCard>
         </div>
         <div>
-          <BlogCard />
+          <BlogCard
+            title='Consectetur adipiscing elit, sed do eiusmod tempo adipiscing elit,' 
+            imgUrl='/public/images/demo2.png'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniamLorem ipsum
+            dolor sit amet, consectetur adipiscing
+            <button>
+              Read more
+            </button>
+          </BlogCard>
         </div>
       </Swiper>
     </div>

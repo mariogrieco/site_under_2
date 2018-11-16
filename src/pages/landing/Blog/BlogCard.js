@@ -9,10 +9,13 @@ const BlogCard = ({
 }) => {
   return (
     <div className={styles.BlogCard}>
-      <div>
-        <img alt='' url={imgUrl} />
+      <div className={styles.BlogCardImgContainer}>
+        <div className={styles.BlogCardImg}  style={{
+          backgroundImage: `url(${imgUrl})`
+        }}>
+        </div>
       </div>
-      <div>
+      <div className={styles.BlogCardSummary}>
         <span>
           {title}
         </span>

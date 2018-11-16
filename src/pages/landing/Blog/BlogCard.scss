@@ -1,8 +1,81 @@
 .BlogCard {
-  height: 165px;
-  width: 20vw;
-  background-color: red;
+  // height: 280px;
+  // width: 600px;
+  height: 21.8em;
+  width: 45.625em;
+  background-color: transparent;
   display: flex;
   margin: 0 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 16px;
+  box-shadow: 0 2px 35px hsla(0,0%,78.4%,.33);
+  border: 1px solid #f4f9ff;
+  button {
+    font-size: 1em;
+    padding: 3.2em;
+    border-radius: 50px;
+    display: block;
+    border: 1px solid #b04ee9;
+    color: #b04ee9;
+    background-color: transparent;
+    padding: 0.45em 1em;
+    line-height: 2.12em;
+    width: 10em;
+    font-weight: 600;
+    margin-top: 2em;
+    cursor: pointer;
+    transition: all 0.25s linear;
+    box-shadow: 0px 1px 2px rgba(200, 200, 200, 0);
+  }
+  button:hover,
+  button:active,
+  button:focus {
+    // font-size: 1.013em;
+    outline: none;
+    border: 1px solid rgba(176, 78, 233, 0.45);
+    color: rgba(176, 90, 233, 1);
+    background-color: transparent;
+    box-shadow: 0px 2px 3px rgba(176, 90, 233, 0.5);
+  }
 }
 
+.BlogCardSummary {
+  background-color: white;
+  padding: 2.25em;
+  
+  > span {
+    font-size: 1.12em;
+    font-weight: 700;
+    color: #000;
+    display: block;
+    line-height: 1.72em;
+  }
+
+  > p {
+    font-size: 0.88em;
+    margin-top: 1.3em;
+    color: #777777;
+    line-height: 2.12em;
+    font-weight: 500;
+    text-shadow: 0 0 1px rgba(186, 182, 182, 0.21);
+    text-align: left;
+  }
+}
+
+.BlogCardImgContainer {
+  min-width: 255px;
+  width: 255px;
+  max-width: 255px;
+  position: relative;
+}
+
+.BlogCardImg { 
+   background-origin: center;
+   background-size: cover;
+   position: absolute;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+}
