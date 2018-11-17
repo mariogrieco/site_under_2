@@ -19,6 +19,7 @@ import CaseStudy from './CaseStudy'
 import ProcessBox from './ProcessArea/ProcessBox'
 import OpenSource from './OpenSource'
 // import ModalNavBar from './ModalNavBar'
+import PressArea from './PressArea'
 import Footer from './Footer'
 import Blog from './Blog'
 import Team from './TeamArea'
@@ -246,7 +247,7 @@ export default class Landing extends Component {
               }
             >
              <Row gutter={24}>
-              <Col sm={24} md={12} lg={10}>
+              <Col sm={24} md={12} lg={11}>
                   <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -254,7 +255,7 @@ export default class Landing extends Component {
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={12} lg={10}>
+                <Col sm={24} md={12} lg={11}>
                   <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -262,7 +263,7 @@ export default class Landing extends Component {
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={12} lg={10}>
+                <Col sm={24} md={12} lg={11}>
                   <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -270,7 +271,7 @@ export default class Landing extends Component {
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={12} lg={10}>
+                <Col sm={24} md={12} lg={11}>
                   <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -384,6 +385,11 @@ export default class Landing extends Component {
         <Row id="Team">
           <Col span="24">
             <Team />
+          </Col>
+        </Row>
+        <Row>
+          <Col span="24">
+            <PressArea />
           </Col>
         </Row>
         <Row>

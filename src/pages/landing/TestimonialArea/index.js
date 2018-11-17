@@ -23,7 +23,7 @@ const TestimonialArea = ({
       />
      <div className={styles.TestimonialAreaGrid}>
        <Row gutter={24}>
-          <Col xs={24} sm={24} md={24} lg={15}>
+          <Col xs={24} sm={24} md={24} lg={14}>
             {children}
           </Col>
           <Col xs={24} sm={24} md={24} lg={9}>

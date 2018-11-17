@@ -48,18 +48,23 @@
   .HeadingArea {
     font-size: 14px;
     padding: 100px 0;
+    p {
+      font-size: 14px;
+      margin: 0 auto;
+      max-width: 95%;
+    }
   }
   .HeadingAreaLeft .HeadingAreaTitle::after {
     text-align: center;
     left: 50%;
     position: relative;
     transform: translateX(-50%);
+    font-size: 24px; 
+    p {
+      max-width: 95%;
+    }
   }
   .HeadingAreaLeft {
     text-align: center;
   }
-   p {
-     width: 100%;
-     margin: 0 auto;
-   }
 }
