@@ -47,8 +47,6 @@ class CaseStudy extends PureComponent {
   }
 
   handleProgress = (progress) => {
-    console.log('here')
-
     this.setState({
       progress: progress,
       init: progress <= 0 ? true : false,
@@ -91,7 +89,7 @@ class CaseStudy extends PureComponent {
               magna aliqua. Ut enim ad minim veniam
             </HeadingArea>
             <div className={styles.BtnLayout}>
-                <Btn disabled={!end} onClick={this.onBack} className='swiper-button-prev-custom' />
+                <Btn left disabled={!end} onClick={this.onBack} className='swiper-button-prev-custom' />
                 <Btn disabled={end} onClick={this.onNext} className='swiper-button-next-custom' />
             </div>
           </Col>

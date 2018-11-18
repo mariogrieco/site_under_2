@@ -1,0 +1,72 @@
+.JobPost {
+  height: 400px;
+  width: 350px;
+  border-radius: 5px;
+  background-color: #905afc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.JobPostPink {
+  background-color: #8e3dc9;
+  .JobPostBtn {
+    background-color: #b271d6;
+  }
+}
+
+.JobPostOrange {
+  background-color: #fd7654;
+  .JobPostBtn {
+    background-color: #ff9f80;
+  }
+}
+
+.JobPostTitle {
+  font-size: 1.45em;
+  font-weight: 700;
+  color: white;
+  display: block;
+  line-height: 1.72em;
+}
+
+.JobPostDescription {
+  margin: 15px auto;
+  font-size: 0.85em;
+  font-weight: 300;
+}
+
+.JobPostBtn {
+  padding: 1.45em 2em;
+  border-radius: 25px;
+  width: 200px;
+  background-color: #a484fe;
+  color: white;
+  border-color: transparent;
+  font-size: 1.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+
+.JobPostContainer {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.JobPostImg {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}

@@ -11,7 +11,7 @@ const OpenSource = ({
 }) => {
   return (
     <div className={styles.OpenSource}>
-      <Row>
+      <Row gutter={36}>
         <Col xs={24} sm={24} md={12}>
           <div className={styles.OpenSourceImgContainer}>
             <div className={styles.OpenSourceImg}>

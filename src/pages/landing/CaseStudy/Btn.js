@@ -7,7 +7,8 @@ function Btn ({
   propStyles,
   className,
   onClick,
-  disabled
+  disabled,
+  left
 }) {
   return (
     <div
@@ -15,11 +16,12 @@ function Btn ({
       className={cn(
         styles.Btn,
         disabled ? styles.BtnDisabled : false,
+        left ? styles.BtnLeft : false,
         className
       )}
       style={propStyles}
     >
-      X
+      {/* X */}
     </div>
   )
 }

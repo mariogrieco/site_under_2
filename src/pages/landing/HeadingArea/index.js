@@ -8,12 +8,14 @@ const HeadingArea =  ({
   children,
   id,
   propsStyles,
-  textAlignleft
+  textAlignleft,
+  whiteStyle
 }) => {
   return (
     <div className={cn(
       styles.HeadingArea,
-      textAlignleft ? styles.HeadingAreaLeft : null
+      textAlignleft ? styles.HeadingAreaLeft : null,
+      whiteStyle ? styles.HeadingAreaWhiteStyle : null
       )} id={id} style={propsStyles||{}}>
       <span className={styles.HeadingAreaTitle}>
         {title}

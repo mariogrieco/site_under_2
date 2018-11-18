@@ -1,5 +1,8 @@
+@import "../../../variables.scss";
+
 .OpenSource {
-  
+  max-width: $containerWidth;
+  margin: 0 auto;
 }
 
 .OpenSourceImgContainer {
@@ -7,7 +10,7 @@
   position: relative;
   height: 450px;
   width: 450px;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .OpenSourceImg {

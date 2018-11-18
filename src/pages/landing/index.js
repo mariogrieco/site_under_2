@@ -15,9 +15,11 @@ import ClientBoxLayout from './TrianglesLayout/ClientBoxLayout'
 import TestimonialArea from './TestimonialArea'
 import CostumerBox from './TestimonialArea/CostumerBox'
 import ProcessArea from './ProcessArea'
+import JobsArea from './JobsArea'
 import CaseStudy from './CaseStudy'
 import ProcessBox from './ProcessArea/ProcessBox'
 import OpenSource from './OpenSource'
+import InfoBox from './InfoBox'
 // import ModalNavBar from './ModalNavBar'
 import PressArea from './PressArea'
 import Footer from './Footer'
@@ -307,7 +309,7 @@ export default class Landing extends Component {
               </Col>
 
               <Col sm={24} md={24} lg={12}>
-                <ProcessBox title='Architect' imgUrl='/public/images/Group119.png' arrow='bottom'>
+                <ProcessBox title='Architect' imgUrl='/public/images/Group115.png' arrow='bottom'>
                   We fine-tune the entire technical ecosystem that will
                   surround your app. Based on your product needs,
                   your budget, and your urgency, we define how you
@@ -390,6 +392,16 @@ export default class Landing extends Component {
         <Row>
           <Col span="24">
             <PressArea />
+          </Col>
+        </Row>
+        <Row>
+          <Col span="24">
+            <JobsArea />
+          </Col>
+        </Row>
+        <Row>
+          <Col span="24">
+            <InfoBox />
           </Col>
         </Row>
         <Row>
