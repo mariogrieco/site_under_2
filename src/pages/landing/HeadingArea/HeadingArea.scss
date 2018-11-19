@@ -85,3 +85,9 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: $screen-lg) {
+  .HeadingArea {
+    padding: 90px 0px;
+  }
+}

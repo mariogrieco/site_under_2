@@ -1,6 +1,8 @@
 import React, {
-  Fragment
+  // Fragment
 } from 'react'
+import styles from './Layout.scss';
+import cn from 'classnames'
 
 export default ({
   LeftArea,
@@ -8,9 +10,9 @@ export default ({
   reverse
 }) => {
   return (
-    <Fragment>
+    <div className={cn(styles.StepAreaLayout, reverse ? styles.StepAreaLayoutReverse : null)}>
       {reverse? RightArea : LeftArea}
       {reverse? LeftArea : RightArea}
-    </Fragment>
+    </div>
   )
 }

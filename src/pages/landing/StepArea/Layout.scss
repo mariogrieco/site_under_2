@@ -1,0 +1,25 @@
+@import "../../../variables.scss";
+
+.StepAreaLayout {
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+@media screen and (max-width: $screen-md) {
+  .StepAreaLayout {
+    margin: 55px auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .StepAreaLayout {
+    margin: 15px auto;
+    display: block;
+  }
+  .StepAreaLayoutReverse {
+    // background-color: red;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

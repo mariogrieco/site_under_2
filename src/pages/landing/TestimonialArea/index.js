@@ -22,11 +22,13 @@ const TestimonialArea = ({
         fill="#edeefb"
       />
      <div className={styles.TestimonialAreaGrid}>
-       <Row gutter={24}>
-          <Col xs={24} sm={24} md={24} lg={14}>
+       <Row gutter={{
+         md: 24
+       }} className={styles.TestimonialAreaGridContainer}>
+          <Col xs={24} sm={24} md={24} lg={14} className={styles.TestimonialAreaChildren}>
             {children}
           </Col>
-          <Col xs={24} sm={24} md={24} lg={9}>
+          <Col xs={24} sm={24} md={24} lg={9} className={styles.TestimonialAreaInfo}>
             <div className={styles.TestimonialAreaContainer}>
               <div className={styles.TestimonialAreaTitle}>
                 {title}

@@ -1,15 +1,16 @@
 @import "../../../variables.scss";
 
 .StudyBox {
-  display: block;
+  display: inline-block;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 5px !important;
+  overflow: hidden;
   margin: 0px 15px;
   cursor: pointer;
 
-  max-height: 380px;
   height: 380px;
-  max-width: 315px;
+  min-height: 380px;
+  // max-width: 315px;
   min-width: 315px;
   width: 315px;
 }

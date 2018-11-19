@@ -79,7 +79,7 @@ class CaseStudy extends PureComponent {
      return (
       <div className={styles.CaseStudyContainer}>
         <Row span="24" className={styles.CaseStudy}>
-          <Col xs={24} sm={24} md={10}>
+          <Col xs={24} sm={24} md={24} lg={10}>
             <HeadingArea title='Case study' propsStyles={{
               backgroundColor: 'transparent',
               padding: '0px'
@@ -97,7 +97,7 @@ class CaseStudy extends PureComponent {
         <Row style={{
           position: 'static'
         }}>
-        <Col xs={24} sm={24} md={14} className={styles.CaseStudySwiperContainer}>
+        <Col xs={24} sm={24} lg={14} md={24} className={styles.CaseStudySwiperContainer}>
           <Swiper {...this.params} className={styles.CaseStudySwiper} ref={this.swiperRef}>
             <div className={styles.CaseStudyItem}>
               <StudyBox imgUrl='/public/images/demo.png' title='Dolore sit amet consecure'>

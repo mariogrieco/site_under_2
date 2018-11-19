@@ -6,8 +6,8 @@
 }
 
 
-// @media screen and (max-width: $screen-md) {
-  // .Blog {
-    
-  // }
-// }
+@media screen and (max-width: $screen-lg) {
+  .CaseStudySwiper {
+    background-color: red;
+  }
+}

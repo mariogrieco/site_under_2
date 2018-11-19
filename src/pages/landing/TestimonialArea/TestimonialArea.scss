@@ -81,8 +81,9 @@
 @media screen and (max-width: $screen-md) {
   .TestimonialAreaContainer {
     text-align: center;
-    margin: 0 auto;
+    margin: 25px auto;
     font-size: 14px;
+    height: auto;
   }
   .TestimonialAreaTitle {
     margin: 0 auto;
@@ -97,5 +98,28 @@
   .TestimonialAreaBody {
     margin: 0 auto;
     font-size: 14px;
+  }
+  .TestimonialAreaChildren {
+      // display: flex;
+      // flex-wrap: wrap;
+  }
+  .TestimonialAreaInfo {
+    
+  }
+  .TestimonialAreaGridContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap; 
+    > div {
+      display: flex;
+      flex-direction: column;
+      // flex-wrap: wrap;
+    }
+    > div > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
 }

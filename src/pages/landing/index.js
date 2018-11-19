@@ -233,7 +233,8 @@ export default class Landing extends Component {
           </Col>
           <Col span="24" style={{
             // display: 'flex',
-            // width: "100%",
+            // maxWidth: "100%",
+            // overflowX: 'hidden',
             justifyContent: 'center',
             alignItems: 'flex-start',
             flexDirection: 'column'
@@ -248,8 +249,13 @@ export default class Landing extends Component {
                 </span>
               }
             >
-             <Row gutter={24}>
-              <Col sm={24} md={12} lg={11}>
+             <Row gutter={{
+               xs: 0,
+               sm: 15,
+               md: 25,
+               lg: 36
+             }}>
+              <Col xs={24} sm={10} md={10} lg={11}>
                   <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -257,7 +263,7 @@ export default class Landing extends Component {
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={12} lg={11}>
+                <Col xs={24} sm={10} md={10} lg={11}>
                   <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -265,7 +271,7 @@ export default class Landing extends Component {
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={12} lg={11}>
+                <Col xs={24} sm={10} md={10} lg={11}>
                   <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -273,7 +279,7 @@ export default class Landing extends Component {
                     incididunt ut labore 
                   </CostumerBox>
                 </Col>
-                <Col sm={24} md={12} lg={11}>
+                <Col xs={24} sm={10} md={10} lg={11}>
                   <CostumerBox avatar='/public/images/figure.png' name='Glade stella' position='CEO Founder Google'>
                     "Lorem ipsum dolor sit amet,
                     consectetur adipiing elit, sed
@@ -285,9 +291,11 @@ export default class Landing extends Component {
             </TestimonialArea>
           </Col>
         </Row>
-        <Row span="24">
+         <Row span="24">
           <ProcessArea>
-            <Row gutter={16}>
+            <Row gutter={{
+              lg: 16
+            }}>
               <Col sm={24} md={24} lg={12}>
                 <ProcessBox title='Understand' imgUrl='/public/images/Group119.png' arrow='right'>
                   We take the time to learn about your project, why it
