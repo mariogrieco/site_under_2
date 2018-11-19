@@ -28,7 +28,7 @@ const TestimonialArea = ({
           <Col xs={24} sm={24} md={24} lg={14} className={styles.TestimonialAreaChildren}>
             {children}
           </Col>
-          <Col xs={24} sm={24} md={24} lg={9} className={styles.TestimonialAreaInfo}>
+          <Col xs={24} sm={24} md={24} lg={10} className={styles.TestimonialAreaInfo}>
             <div className={styles.TestimonialAreaContainer}>
               <div className={styles.TestimonialAreaTitle}>
                 {title}

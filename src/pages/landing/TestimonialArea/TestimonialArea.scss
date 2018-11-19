@@ -14,11 +14,15 @@
   background-image: url('/public/images/background2.png');
   background-position: center;
   background-size: cover;
+  padding: 0px;
+  height: 100%;
+  // background-attachment: fixed;
 }
 
 .TestimonialAreaGrid {
   max-width: $containerWidth;
   margin: 80px auto;
+  margin-bottom: 140px;
 }
 
 .TestimonialAreaTitle {
@@ -43,13 +47,13 @@
   content: " ";
   height: 2px;
   background-color: #fff;
-  width: 25%;
+  width: 26.6%;
 
   position: relative;
   bottom: 0;
   left: 0;
   display: block;
-  margin: 30px 0px 0px 0px;
+  margin: 25px 0px 0px 5px;
 }
 
 // .TestimonialAreaBody {
@@ -63,12 +67,13 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  padding-left: 3.25em;
 }
 
 .TestimonialAreaBody {
   max-width: 620px;
   font-size: .88em;
-  line-height: 2.46em;
+  line-height: 2.35em;
   color: #d8bee7;
   // color: #777;
   font-weight: 500;
@@ -87,8 +92,9 @@
   }
   .TestimonialAreaTitle {
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 23px;
     padding: 10px 0;
+    line-height: 0;
   }
   .TestimonialAreaTitle::after {
     left: 50%;
@@ -104,7 +110,7 @@
       // flex-wrap: wrap;
   }
   .TestimonialAreaInfo {
-    
+    // margin-left: 12%;
   }
   .TestimonialAreaGridContainer {
     display: flex;
@@ -121,5 +127,11 @@
       align-items: center;
       flex-wrap: wrap;
     }
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  .TestimonialAreaContainer {
+    padding: 0px !important;
   }
 }
