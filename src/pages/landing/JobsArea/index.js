@@ -16,36 +16,36 @@ import styles from './JobsArea.scss'
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor.
       </HeadingArea>
-
-      <Row>
-        <Col span="8">
-          <JobPost
-            title='Developer'
-            description='Jakarta Indonesia'
-            imgUrl='/public/images/Group.png'
-            btnLabel={'View Job'}
-          />
-        </Col>
-        <Col span="8">
-          <JobPost
-            orange
-            title='Accounting'
-            description='Jakarta Indonesia'
-            imgUrl='/public/images/accounting-symbol.png'
-            btnLabel={'View Job'}
-          />
-        </Col>
-        <Col span="8">
-          <JobPost
-            pink
-            title='Marketing'
-            description='Jakarta Indonesia'
-            imgUrl='/public/images/marketing-symbol.png'
-            btnLabel={'View Job'}
-          />
-        </Col>
-      </Row>
-
+      <div className={styles.JobsAreaContainer}>
+        <Row className={styles.JobsAreaRow}>
+          <Col lg={8} xs={25} md={12} sm={25}>
+            <JobPost
+              title='Developer'
+              description='Jakarta Indonesia'
+              imgUrl='/public/images/Group.png'
+              btnLabel={'View Job'}
+              />
+          </Col>
+          <Col lg={8} xs={25} md={12} sm={25}>
+            <JobPost
+              orange
+              title='Accounting'
+              description='Jakarta Indonesia'
+              imgUrl='/public/images/accounting-symbol.png'
+              btnLabel={'View Job'}
+              />
+          </Col>
+          <Col lg={8} xs={25} md={12} sm={25}>
+            <JobPost
+              pink
+              title='Marketing'
+              description='Jakarta Indonesia'
+              imgUrl='/public/images/marketing-symbol.png'
+              btnLabel={'View Job'}
+              />
+          </Col>
+        </Row>
+      </div>
       <Button className={styles.JobAreaBtn}>
         SEE ALL JOBS
       </Button>
