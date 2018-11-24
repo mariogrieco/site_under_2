@@ -5,6 +5,12 @@
   padding: 120px 0px;
 }
 
+.BlogItem {
+  display: block !important;
+  margin: 0px 15px !important;
+  width: auto !important;
+}
+
 
 @media screen and (max-width: $screen-lg) {
   .CaseStudySwiper {

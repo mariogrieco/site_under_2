@@ -23,7 +23,7 @@ class PressArea extends Component {
      // prevEl: '.swiper-button-prev-custom'
    // },
    grabCursor: true,
-   spaceBetween: 25,
+   spaceBetween: 0,
    slidesPerView: 'auto',
   //  centeredSlides: true,
    on: {
@@ -92,12 +92,12 @@ class PressArea extends Component {
           </Col>
           <Col span="20" className={styles.PressAreaSwiperContainer}>
             <Swiper key={'Swiper2'} ref={this.swiperRef}>
-            <span className={styles.PressAreaSwiperSlide}>
+            <div className={styles.PressAreaSwiperSlide}>
               <StudyBox imgUrl='/public/images/demo.png' title='Dolore sit amet consecure'>
                   Lorem ipsum dolor sit amet, dola eiusmod tempor doras. consectetur adipiing elit, sed do
               </StudyBox>
-            </span>
-            <span className={styles.PressAreaSwiperSlide}>
+            </div>
+            <div className={styles.PressAreaSwiperSlide}>
               <StudyBox
                 title='Dolore sit amet consecure'
                 tags={['Dolore', 'AMETN', 'Team']}
@@ -106,13 +106,13 @@ class PressArea extends Component {
                 Lorem ipsum dolor sit amet, dola eiusmod tempor doras. consectetur adipiing elit, sed do
                 Lorem ipsum dolor sit amet, dola eiusmod tempor doras. consectetur adipiing elit, sed do
               </StudyBox>
-            </span>
-            <span className={styles.PressAreaSwiperSlide}>
+            </div>
+            <div className={styles.PressAreaSwiperSlide}>
               <StudyBox imgUrl='/public/images/demo.png' title='Dolore sit amet consecure'>
                 Lorem ipsum dolor sit amet, dola eiusmod tempor doras. consectetur adipiing elit, sed do
               </StudyBox>
-            </span>
-            <span className={styles.PressAreaSwiperSlide}>
+            </div>
+            <div className={styles.PressAreaSwiperSlide}>
               <StudyBox
                 title='Dolore sit amet consecure'
               // tags={['Dolore', 'AMETN', 'Team']}
@@ -121,7 +121,7 @@ class PressArea extends Component {
                 Lorem ipsum dolor sit amet, dola eiusmod tempor doras. consectetur adipiing elit, sed do
                 Lorem ipsum dolor sit amet, dola eiusmod tempor doras. consectetur adipiing elit, sed do
               </StudyBox>
-            </span>
+            </div>
           </Swiper>
           </Col>
         </Row>

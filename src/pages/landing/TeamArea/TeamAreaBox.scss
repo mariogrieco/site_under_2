@@ -63,10 +63,17 @@
   .TeamAreaBox {
     display: block;
     margin: 15px auto;
-    height: 480px;
+    // height: 480px;
+    height: auto;
     max-width: 90%;
   }
   .TeamAreaBoxSummary {
-    padding: 1.25em;
+    padding: 1.2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .TeamAreaBoxImgContainer {
+    max-height: 45vh;
   }
 }

@@ -8,14 +8,12 @@
 }
 
 .PressAreaSwiperContainer {
-  .PressAreaSwiperSlide {
-    width: 29% !important;
-    margin: 0px auto;
-    // figure {
-      // max-width: 90% !important;
-      // width: auto !important;
-    // }
-  }
+}
+
+.PressAreaSwiperSlide {
+  display: block !important;
+  margin: 0px 15px !important;
+  width: auto !important;
 }
 
 .PressAreaBody {

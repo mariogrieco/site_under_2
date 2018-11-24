@@ -89,7 +89,7 @@
     height: 20.8em;
     width: 44.625em;
     margin: 0px;
-    max-width: 90vw;
+    max-width: auto;
     margin: 0 auto;
     max-height: auto;
     min-height: auto;
@@ -104,5 +104,19 @@
     max-width: 100%;
     min-width: 100%;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .BlogCard {
+    // max-height: 90vh;
+    max-width: 80vw;
+  }
+  .BlogCardImgContainer {
+    max-height: 40vh;
+  }
+  .BlogCardSummary {
+    font-size: 13px;
+    padding: 1em;
   }
 }

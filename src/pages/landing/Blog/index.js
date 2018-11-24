@@ -23,8 +23,8 @@ const params = {
   //   prevEl: '.swiper-button-prev'
   // },
   grabCursor: true,
-  slidesPerView: 2,
-  spaceBetween: 30,
+  slidesPerView: 'auto',
+  spaceBetween: 0,
   initialSlide: 2,
   freeMode: true,
   centeredSlides: true,
@@ -37,7 +37,7 @@ const Blog = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       </HeadingArea>
       <Swiper {...params} className={styles.CaseStudySwiper}>
-        <div>
+        <div className={styles.BlogItem}>
           <BlogCard
             title='Consectetur adipiscing elit, sed do eiusmod tempo adipiscing elit,' 
             imgUrl='/public/images/demo2.png'>
@@ -50,7 +50,7 @@ const Blog = () => {
             </button>
           </BlogCard>
         </div>
-        <div>
+        <div className={styles.BlogItem}>
           <BlogCard
             title='Consectetur adipiscing elit, sed do eiusmod tempo adipiscing elit,' 
             imgUrl='/public/images/demo2.png'>
@@ -63,7 +63,7 @@ const Blog = () => {
             </button>
           </BlogCard>
         </div>
-        <div>
+        <div className={styles.BlogItem}>
           <BlogCard
             title='Consectetur adipiscing elit, sed do eiusmod tempo adipiscing elit,' 
             imgUrl='/public/images/demo2.png'>
@@ -76,7 +76,7 @@ const Blog = () => {
             </button>
           </BlogCard>
         </div>
-        <div>
+        <div className={styles.BlogItem}>
           <BlogCard
             title='Consectetur adipiscing elit, sed do eiusmod tempo adipiscing elit,' 
             imgUrl='/public/images/demo2.png'>
