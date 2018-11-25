@@ -2,6 +2,7 @@ const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   target: 'web',
@@ -18,6 +19,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
+        enforce: "pre",
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
@@ -91,5 +93,10 @@ module.exports = {
       }
     ]),
     new CleanWebpackPlugin(['dist/CSR'], {root: __dirname})
-  ]
+  ],
+  // optimization: {
+  //   minimizer: [new UglifyJsPlugin({
+  //     parallel: 2
+  //   })]
+  // }
 }

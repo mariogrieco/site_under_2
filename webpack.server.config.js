@@ -2,6 +2,7 @@ const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const config = {
   target: 'node',
@@ -18,6 +19,7 @@ const config = {
   module: {
         rules: [
           {
+            enforce: "pre",
             test: /\.js$/,
             exclude: /node_modules/,
             use: {
@@ -95,7 +97,13 @@ const config = {
           }
         ]),
         new CleanWebpackPlugin(['dist/SSR'])
-      ]
+  ],
+  // optimization: {
+      // minimizer: [new UglifyJsPlugin({
+        // parallel: 2,
+        // ecma:8
+      // })]
+  // }
 }
 
 module.exports = config

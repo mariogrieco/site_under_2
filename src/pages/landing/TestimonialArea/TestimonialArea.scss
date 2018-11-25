@@ -83,11 +83,21 @@
 }
 
 
-@media screen and (max-width: $screen-md) {
+@media screen and (max-width: $screen-lg) {
+  .TestimonialAreaContainer {
+    padding: 0px;
+  }
+}
+
+
+@media screen and (max-width: $screen-lg) {
+  .TestimonialAreaContainer {
+    padding: 90px 0px;
+  }
   .TestimonialAreaContainer {
     text-align: center;
     margin: 25px auto;
-    font-size: 14px;
+    font-size: 15px;
     height: auto;
   }
   .TestimonialAreaTitle {
@@ -103,7 +113,8 @@
   }
   .TestimonialAreaBody {
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 15px;
+    color: white;
   }
   .TestimonialAreaChildren {
       // display: flex;
@@ -130,8 +141,11 @@
   }
 }
 
-@media screen and (max-width: $screen-lg) {
+@media screen 
+and (max-width: $screen-md)
+and (max-height: 736px) {
   .TestimonialAreaContainer {
-    padding: 0px !important;
+    padding: 20px;
+    padding-top: 100px;
   }
 }

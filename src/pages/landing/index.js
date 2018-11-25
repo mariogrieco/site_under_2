@@ -5,6 +5,16 @@ import {
 import Header from './Header'
 import MainSection from './MainSection'
 
+// import {
+  // families
+// } from '../../../CONFIG'
+
+// import Loadable from 'react-loadable';
+// const LoadableComponentFonts = Loadable({
+  // loader: () => import('./Fonts'),
+  // loading: () => {<span></span>},
+// });
+
 import Layout from './Layout'
 import HeadingArea from './HeadingArea'
 import BackgroundImg from './HeadingArea/BackgroundImg'
@@ -106,13 +116,43 @@ const menuConfig = [
 ]
 
 export default class Landing extends Component {
+  // handleErrorOnAsyncFonts = (err = 'was server side') => {
+  //   console.error('Oops Error while loading async fonts injecting static assets: ', err)
+  //   families.forEach(family => {
+  //     const fontHref = `https://fonts.googleapis.com/css?family=${family}`
+  //     const link = document.createElement('link')
+  //     const head = document.getElementsByTagName('head')[0]
+  //     link.rel = 'stylesheet'
+  //     link.href = fontHref
+  //     head.appendChild(link)
+  //   })
+  // }
+
+  // componentDidMount () {
+  // 	if (typeof window !== 'undefined') {
+  //     import('webfontloader').then(WebFontLoader => {
+  //       WebFontLoader.load({
+  //         google: {
+  //           families
+  //         }
+  //       });
+  //     }).catch(err => {
+  //       this.handleErrorOnAsyncFonts(err)
+  //     })
+  //   } else {
+  //     this.handleErrorOnAsyncFonts()
+  //   }
+  // }
+
   shouldComponentUpdate () {
     return false
   }
+
   render() {
     return (
       <Fragment>
         {/* <ModalNavBar menuConfig={menuConfig} /> */}
+        {/* <LoadableComponentFonts /> */}
         <Layout img decorator styles={{
           body: {
             // 'overflow-y': 'auto',

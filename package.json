@@ -25,18 +25,21 @@
     "react-dom": "^16.7.0-alpha.0",
     "react-fontawesome": "1.6.1",
     "react-id-swiper": "^1.6.8",
+    "react-loadable": "^5.5.0",
     "react-router": "4.2.0",
     "react-router-dom": "^4.4.0-beta.4",
     "react-scroll": "^1.7.10",
     "redux": "4.0.0",
-    "redux-thunk": "2.2.0"
+    "redux-thunk": "2.2.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "lint": "eslint",
     "prestart": "yarn run build:client -p && yarn run build:server -p",
     "build:client": "webpack --config webpack.config.js",
     "build:server": "webpack --config webpack.server.config.js",
-    "start": "cross-env PORT=80 NODE_ENV=production node dist/SSR index.js",
+    "start": "cross-env PORT=8001 NODE_ENV=production node dist/SSR index.js",
     "start:dev-csr": "webpack-dev-server --config webpack.dev.config.js --watch",
     "start:dev-ssr": "nodemon dist/SSR index.js"
   },

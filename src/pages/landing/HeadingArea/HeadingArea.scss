@@ -61,12 +61,19 @@
    }
 }
 
+
+@media screen and (max-width: $screen-lg) {
+  .HeadingArea {
+    padding: 90px 0px;
+  }
+}
+
 @media screen and (max-width: $screen-md) {
   .HeadingArea {
-    font-size: 14px;
+    font-size: 15px;
     padding: 100px 0;
     p {
-      font-size: 14px;
+      font-size: 15px;
       margin: 0 auto;
       max-width: 95%;
     }
@@ -86,8 +93,11 @@
   }
 }
 
-@media screen and (max-width: $screen-lg) {
+@media screen 
+and (max-width: $screen-md)
+and (max-height: 736px) {
   .HeadingArea {
-    padding: 90px 0px;
+    padding: 20px;
+    padding-top: 100px;
   }
 }

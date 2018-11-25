@@ -101,7 +101,7 @@
 
 @media screen and (max-width: $screen-lg) {
   .ProcessBox {
-    font-size: 14px;
+    font-size: 15px;
     padding: 10px 0px;
     // flex-direction: column;
     .ProcessBoxImg {
@@ -124,6 +124,12 @@
       left: 50%;
       transform: translateX(-50%) rotate(90deg);
     }
+  }
+}
+@media screen and (max-width: $screen-md) {
+  .ProcessBox {
+    max-height: 100%;
+    height: auto;
   }
 }
 

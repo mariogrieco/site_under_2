@@ -13,7 +13,8 @@
 }
 
 .FooterTitle {
-
+  color: whitesmoke;
+  font-weight: bold;
 }
 
 .FooterIcons {
@@ -51,5 +52,11 @@
 @media screen and (max-width: $screen-lg) {
   .Footer {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .FooterHeading {
+    margin-top: 50px
   }
 }

@@ -71,19 +71,19 @@ function htmlTemplate(reactDom, title) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>demo - ${title}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bitcraft.io - ${title}</title>
   <meta name="theme-color" content="#282F55" />
   <link rel="stylesheet" href="/css/landing.css" />
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous" /> -->
   <link rel="manifest" href="/manifest.json">
   <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
-  <link defer href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700" rel="stylesheet" />
-  <link defer href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600" rel="stylesheet" />
-  <link defer href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet" />
-  <link defer href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:800" rel="stylesheet" />
-  <link defer href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
   <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css" />
+  <link defer href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700" rel="stylesheet" />
+  <link defer href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600" rel="stylesheet">
+  <link defer href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
+  <link defer href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:800" rel="stylesheet">
+  <link defer href="https://fonts.googleapis.com/css?family=Lato:300,400,700,800,900" rel="stylesheet">
 </head>
   <body>
     <noscript>
