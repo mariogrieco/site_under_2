@@ -32,33 +32,7 @@
     "redux": "4.0.0",
     "redux-thunk": "2.2.0",
     "uglifyjs-webpack-plugin": "^2.0.1",
-    "webfontloader": "^1.6.28"
-  },
-  "scripts": {
-    "lint": "eslint",
-    "prestart": "yarn run build:client -p && yarn run build:server -p",
-    "build:client": "webpack --config webpack.config.js",
-    "build:server": "webpack --config webpack.server.config.js",
-    "start": "cross-env PORT=8001 NODE_ENV=production node dist/SSR index.js",
-    "start:dev-csr": "webpack-dev-server --config webpack.dev.config.js --watch",
-    "start:dev-ssr": "nodemon dist/SSR index.js"
-  },
-  "browserslist": [
-    "> 0.0%",
-    "last 20 versions",
-    "Android >= 0",
-    "Firefox >= 0",
-    "iOS >= 0",
-    "Opera >= 0",
-    "OperaMini >= 0",
-    "Safari >= 0",
-    "ChromeAndroid >= 0",
-    "BlackBerry >= 0",
-    "Baidu >= 0",
-    "Samsung >= 0",
-    "Edge >= 0"
-  ],
-  "devDependencies": {
+    "webfontloader": "^1.6.28",
     "babel-core": "^6.26.3",
     "babel-eslint": "7.2.3",
     "babel-loader": "7.1.2",
@@ -91,5 +65,31 @@
     "webpack": "4.6.0",
     "webpack-cli": "2.1.3",
     "webpack-dev-server": "^3.1.10"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "prestart": "yarn run build:client -p && yarn run build:server -p",
+    "build:client": "webpack --config webpack.config.js",
+    "build:server": "webpack --config webpack.server.config.js",
+    "start": "cross-env PORT=8001 NODE_ENV=production node dist/SSR index.js",
+    "start:dev-csr": "webpack-dev-server --config webpack.dev.config.js --watch",
+    "start:dev-ssr": "nodemon dist/SSR index.js"
+  },
+  "browserslist": [
+    "> 0.0%",
+    "last 20 versions",
+    "Android >= 0",
+    "Firefox >= 0",
+    "iOS >= 0",
+    "Opera >= 0",
+    "OperaMini >= 0",
+    "Safari >= 0",
+    "ChromeAndroid >= 0",
+    "BlackBerry >= 0",
+    "Baidu >= 0",
+    "Samsung >= 0",
+    "Edge >= 0"
+  ],
+  "devDependencies": {
   }
 }
